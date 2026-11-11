@@ -334,7 +334,7 @@ flowchart TB
 
 **Yash Sharma** · MBA (Finance & Marketing), MANIT Bhopal
 
-[GitHub](https://github.com/sharma23yash-oss) · [Website](https://yashify.tech) · LinkedIn: *add your profile URL here*
+[GitHub](https://github.com/sharma23yash-oss) · [Website](https://yashify.tech) · LinkedIn: *https://www.linkedin.com/in/yaashify*
 
 *An independent portfolio project on synthetic data. Not affiliated with any company.*
 
