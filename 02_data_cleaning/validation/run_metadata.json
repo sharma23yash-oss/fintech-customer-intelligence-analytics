@@ -1,0 +1,35 @@
+{
+  "records_before": {
+    "Users": 10000,
+    "Monthly_Activity": 64645,
+    "Support_Tickets": 7614,
+    "Campaigns": 10,
+    "Cohort_Retention": 78
+  },
+  "records_after": {
+    "Cleaned_Users": 10000,
+    "Cleaned_Campaigns": 10,
+    "Cleaned_Monthly_Activity": 64645,
+    "Cleaned_Support_Tickets": 7614,
+    "Customer_Funnel": 312,
+    "Customer_Cohorts": 1008,
+    "Campaign_Performance": 10,
+    "Customer_Segments": 10000
+  },
+  "thresholds": {
+    "fence_dep_raw": 22944.331250000003,
+    "fence_dep_log": 62935.553944081046,
+    "fence_tv_raw": 30364.77375,
+    "fence_tv_log": 105450.86224867428,
+    "fence_avg_trade_log": 35759.42451454403,
+    "fence_res_time": 27.85,
+    "p75_first_deposit": 11351.8825
+  },
+  "future_event_counts": {
+    "kyc_completion_date": 116,
+    "bank_link_date": 196,
+    "first_deposit_date": 274,
+    "first_trade_date": 280
+  },
+  "users_future": 388
+}

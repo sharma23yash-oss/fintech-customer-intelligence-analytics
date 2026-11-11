@@ -1,0 +1,6 @@
+window_rule,KYC_window_days,KYC_premature_pct,Bank_window_days,Bank_premature_pct,Deposit_window_days,Deposit_premature_pct,Trade_window_days,Trade_premature_pct
+p50,6,44.1,4,42.4,7,47.4,6,44.9
+p75,9,17.4,6,14.2,11,20.0,9,17.5
+p90,10,8.3,7,0.0,13,6.8,10,8.6
+p95 (used),11,0.0,7,0.0,14,0.0,11,0.0
+max,11,0.0,7,0.0,14,0.0,11,0.0

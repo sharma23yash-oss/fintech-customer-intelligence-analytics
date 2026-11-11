@@ -1,0 +1,102 @@
+table FactActivity
+
+	column CustomerID
+		dataType: string
+		summarizeBy: none
+		sourceColumn: CustomerID
+
+	column ActivityMonthDate
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: ActivityMonthDate
+
+	column RegMonthDate
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: RegMonthDate
+
+	column MonthsSinceRegistration
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: MonthsSinceRegistration
+
+	column CampaignKey
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: CampaignKey
+
+	column CityKey
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: CityKey
+
+	column DeviceKey
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: DeviceKey
+
+	column SegmentKey
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: SegmentKey
+
+	column ActiveInMonth
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: ActiveInMonth
+
+	column TradedInMonth
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: TradedInMonth
+
+	column DepositedInMonth
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: DepositedInMonth
+
+	column WithdrewInMonth
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: WithdrewInMonth
+
+	column TradeCount
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: TradeCount
+
+	column TradingValueINR
+		dataType: double
+		summarizeBy: none
+		sourceColumn: TradingValueINR
+
+	column DepositValueINR
+		dataType: double
+		summarizeBy: none
+		sourceColumn: DepositValueINR
+
+	column WithdrawalValueINR
+		dataType: double
+		summarizeBy: none
+		sourceColumn: WithdrawalValueINR
+
+	column NetFlowINR
+		dataType: double
+		summarizeBy: none
+		sourceColumn: NetFlowINR
+
+	partition FactActivity = m
+		mode: import
+		source =
+				let
+				    Source   = Csv.Document(File.Contents(DataFolder & "\FactActivity.csv"), [Delimiter = ",", Columns = 17, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed    = Table.TransformColumnTypes(Promoted, {{"CustomerID", type text}, {"ActivityMonthDate", type date}, {"RegMonthDate", type date}, {"MonthsSinceRegistration", Int64.Type}, {"CampaignKey", type text}, {"CityKey", type text}, {"DeviceKey", type text}, {"SegmentKey", Int64.Type}, {"ActiveInMonth", Int64.Type}, {"TradedInMonth", Int64.Type}, {"DepositedInMonth", Int64.Type}, {"WithdrewInMonth", Int64.Type}, {"TradeCount", Int64.Type}, {"TradingValueINR", type number}, {"DepositValueINR", type number}, {"WithdrawalValueINR", type number}, {"NetFlowINR", type number}}, "en-US")
+				in
+				    Typed

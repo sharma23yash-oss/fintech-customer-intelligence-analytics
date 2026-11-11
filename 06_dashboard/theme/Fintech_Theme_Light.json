@@ -1,0 +1,156 @@
+{
+  "name": "Fintech Light (synthetic demo)",
+  "dataColors": [
+    "#2A78D6",
+    "#EB6834",
+    "#1BAF7A",
+    "#EDA100",
+    "#E87BA4",
+    "#008300",
+    "#6250D6",
+    "#E34948"
+  ],
+  "background": "#F4F6FA",
+  "foreground": "#0B1F3A",
+  "tableAccent": "#2A78D6",
+  "good": "#0CA30C",
+  "neutral": "#FAB219",
+  "bad": "#D03B3B",
+  "maximum": "#0D366B",
+  "center": "#6DA7EC",
+  "minimum": "#CDE2FB",
+  "textClasses": {
+    "callout": {
+      "fontSize": 24,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#0B1F3A"
+    },
+    "title": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#0B1F3A"
+    },
+    "header": {
+      "fontSize": 11,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#0B1F3A"
+    },
+    "label": {
+      "fontSize": 10,
+      "fontFace": "Segoe UI",
+      "color": "#52606D"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [
+          {
+            "show": true,
+            "fontColor": {
+              "solid": {
+                "color": "#0B1F3A"
+              }
+            },
+            "fontSize": 12,
+            "fontFamily": "Segoe UI Semibold",
+            "alignment": "left"
+          }
+        ],
+        "background": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E3E8EF"
+              }
+            },
+            "radius": 6
+          }
+        ],
+        "categoryAxis": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": "#52606D"
+              }
+            },
+            "fontSize": 10,
+            "showAxisTitle": false
+          }
+        ],
+        "valueAxis": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": "#52606D"
+              }
+            },
+            "fontSize": 10,
+            "showAxisTitle": false,
+            "gridlineColor": {
+              "solid": {
+                "color": "#E3E8EF"
+              }
+            }
+          }
+        ],
+        "legend": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": "#52606D"
+              }
+            },
+            "fontSize": 10,
+            "position": "Top"
+          }
+        ],
+        "labels": [
+          {
+            "color": {
+              "solid": {
+                "color": "#0B1F3A"
+              }
+            },
+            "fontSize": 10
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#F4F6FA"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "outspace": [
+          {
+            "color": {
+              "solid": {
+                "color": "#F4F6FA"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

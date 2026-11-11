@@ -1,0 +1,19 @@
+check,passed,detail
+users.user_id unique,True,10000 rows
+"users row count = 10,000",True,10000
+campaign ids in users exist in campaigns,True,
+"activity (user_id, month) unique",True,64645 rows
+activity users exist in users,True,
+tickets.ticket_id unique,True,7614 rows
+ticket users exist in users,True,
+no registration after snapshot,True,
+kyc_date_asof not after snapshot,True,
+bank_date_asof not after snapshot,True,
+deposit_date_asof not after snapshot,True,
+trade_date_asof not after snapshot,True,
+funnel is nested (trade>=deposit>=bank>=kyc as flags),True,
+mature + immature = all users,True,mature=9116
+organic campaigns have no spend,True,
+resolved tickets carry resolution time,True,
+CSAT within 1-5,True,
+no negative money values,True,

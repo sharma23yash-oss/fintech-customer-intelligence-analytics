@@ -1,0 +1,61 @@
+table DimDate
+	dataCategory: Time
+
+	column Date
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		isKey
+		summarizeBy: none
+		sourceColumn: Date
+
+	column Year
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: Year
+
+	column Quarter
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Quarter
+
+	column MonthNumber
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: MonthNumber
+
+	column MonthStart
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: MonthStart
+
+	column MonthLabel
+		dataType: string
+		summarizeBy: none
+		sourceColumn: MonthLabel
+		sortByColumn: MonthSort
+
+	column MonthSort
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: MonthSort
+
+	column WeekdayNumber
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: WeekdayNumber
+
+	column WeekdayName
+		dataType: string
+		summarizeBy: none
+		sourceColumn: WeekdayName
+
+	column IsMonthStart
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: IsMonthStart
+
+	partition DimDate = calculated
+		mode: import
+		source = VAR _start = DATE(2025, 11, 1) VAR _end = DATE(2026, 10, 31) RETURN ADDCOLUMNS( CALENDAR(_start, _end), "Year", YEAR([Date]), "Quarter", "Q" & ROUNDUP(MONTH([Date]) / 3, 0), "MonthNumber", MONTH([Date]), "MonthStart", DATE(YEAR([Date]), MONTH([Date]), 1), "MonthLabel", FORMAT([Date], "mmm yy"), "MonthSort", YEAR([Date]) * 100 + MONTH([Date]), "WeekdayNumber", WEEKDAY([Date], 2), "WeekdayName", FORMAT([Date], "ddd"), "IsMonthStart", IF(DAY([Date]) = 1, 1, 0) )

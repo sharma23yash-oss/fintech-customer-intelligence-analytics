@@ -1,0 +1,125 @@
+table FactTicket
+
+	column TicketID
+		dataType: string
+		summarizeBy: none
+		sourceColumn: TicketID
+
+	column CustomerID
+		dataType: string
+		summarizeBy: none
+		sourceColumn: CustomerID
+
+	column CreatedDate
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: CreatedDate
+
+	column CampaignKey
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: CampaignKey
+
+	column CityKey
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: CityKey
+
+	column DeviceKey
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: DeviceKey
+
+	column SegmentKey
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: SegmentKey
+
+	column Category
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Category
+
+	column Priority
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Priority
+		sortByColumn: PrioritySort
+
+	column PrioritySort
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: PrioritySort
+
+	column Status
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Status
+
+	column ResolutionHours
+		dataType: double
+		summarizeBy: none
+		sourceColumn: ResolutionHours
+
+	column CSAT
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: CSAT
+
+	column IsResolved
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: IsResolved
+
+	column IsUnresolved
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: IsUnresolved
+
+	column IsEscalated
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: IsEscalated
+
+	column TicketAgeDays
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: TicketAgeDays
+
+	column BacklogAgeBucket
+		dataType: string
+		summarizeBy: none
+		sourceColumn: BacklogAgeBucket
+		sortByColumn: BacklogSort
+
+	column BacklogSort
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: BacklogSort
+
+	column RelatedFunnelStage
+		dataType: string
+		summarizeBy: none
+		sourceColumn: RelatedFunnelStage
+
+	column StagePendingAtTicket
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: StagePendingAtTicket
+
+	partition FactTicket = m
+		mode: import
+		source =
+				let
+				    Source   = Csv.Document(File.Contents(DataFolder & "\FactTicket.csv"), [Delimiter = ",", Columns = 21, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed    = Table.TransformColumnTypes(Promoted, {{"TicketID", type text}, {"CustomerID", type text}, {"CreatedDate", type date}, {"CampaignKey", type text}, {"CityKey", type text}, {"DeviceKey", type text}, {"SegmentKey", Int64.Type}, {"Category", type text}, {"Priority", type text}, {"PrioritySort", Int64.Type}, {"Status", type text}, {"ResolutionHours", type number}, {"CSAT", Int64.Type}, {"IsResolved", Int64.Type}, {"IsUnresolved", Int64.Type}, {"IsEscalated", Int64.Type}, {"TicketAgeDays", Int64.Type}, {"BacklogAgeBucket", type text}, {"BacklogSort", Int64.Type}, {"RelatedFunnelStage", type text}, {"StagePendingAtTicket", Int64.Type}}, "en-US")
+				in
+				    Typed

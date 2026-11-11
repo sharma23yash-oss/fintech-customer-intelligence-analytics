@@ -1,0 +1,11 @@
+SegmentKey,SegmentName,SegmentGroup,RecommendedAction
+1,01 New / in-flight onboarding,Onboarding - in flight,Let the journey run; light nudges only
+2,02 KYC-pending (stalled),Onboarding - stalled,KYC rescue: reminders + assisted verification
+3,03 Bank-link pending (stalled),Onboarding - stalled,Bank-link help content + UPI/net-banking prompts
+4,04 Deposit-pending (stalled),Onboarding - stalled,First-deposit nudge; small-ticket starter prompt
+5,"05 Deposited, never traded (stalled)",Onboarding - stalled,"Activation: guided first trade, education"
+6,06 First-time trader (<=30d since first trade),Active trader - new,Habit building: second-trade prompt
+7,07 Repeat trader (2-3 trading months of last 6),Active trader - engaged,Frequency nudges; feature discovery
+8,08 High-engagement trader (>=4 trading months of last 6),Active trader - engaged,Retain and reward; service priority
+9,09 Inactive trader (no activity Aug-Oct),Inactive / occasional,Win-back campaign (no pitch on first touch)
+10,10 Occasional trader (0-1 trading months of last 6),Inactive / occasional,Re-engagement; relevance-based content

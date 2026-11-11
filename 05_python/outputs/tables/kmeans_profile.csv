@@ -1,0 +1,5 @@
+cluster,activity_ratio,trade_months_6m,log_trading_value_6m,months_since_last_active,log_first_deposit,ticket_count,funnel_depth,size,share_pct,first_trade_rate_pct,dormant_3m_pct
+0,0.488,0.0,0.0,1.137,1.564,0.919,1.139,1623,21.652,1.109,11.548
+1,0.647,2.804,10.153,0.939,8.778,0.599,3.891,3116,41.569,89.089,11.316
+2,0.557,1.359,8.761,1.126,0.0,0.915,0.69,1970,26.281,0.0,15.924
+3,0.269,0.109,0.893,5.403,1.706,0.877,1.231,787,10.499,4.956,100.0

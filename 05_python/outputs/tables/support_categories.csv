@@ -1,0 +1,8 @@
+category,tickets,users_affected,high_priority,escalated,unresolved,median_resolution_h,mean_resolution_h,avg_csat,share_pct
+KYC & verification,1727,1579,276,107,316,9.5,10.93,3.77,22.68
+Trading & orders,1313,1215,185,85,226,9.3,10.69,3.85,17.24
+Bank linking,1246,1167,195,94,242,9.6,10.8,3.81,16.36
+Deposits & withdrawals,1198,1128,172,72,218,9.55,11.03,3.83,15.73
+App navigation,892,849,153,47,165,9.7,11.22,3.86,11.72
+Account access,732,699,113,44,118,9.1,10.49,3.89,9.61
+Fees & charges,506,494,77,30,86,9.05,11.15,3.83,6.65

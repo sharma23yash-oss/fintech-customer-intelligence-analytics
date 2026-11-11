@@ -1,0 +1,18 @@
+item,reported,recalculated,matches
+Analysis: KYC rate,0.7075,0.7075,True
+Analysis: bank-link rate,0.6226,0.6226,True
+Analysis: first-deposit rate,0.4786,0.4786,True
+Analysis: first-trade rate,0.3816,0.3816,True
+Analysis: 30d active rate,0.5275,0.5275,True
+Analysis: 30d churn proxy,0.4725,0.4714,False
+Analysis: spend,2690000.0,2690000.0,True
+Analysis: blended CAC (all users),331.2,269.0,False
+Analysis: tickets,7614.0,7614.0,True
+Analysis: avg resolution h,10.89,10.8884,True
+Analysis: CSAT,3.83,3.8267,True
+Funnel: KYC,7075.0,7075.0,True
+Funnel: bank,6226.0,6226.0,True
+Funnel: deposit,4786.0,4786.0,True
+Funnel: trade,3816.0,3816.0,True
+Funnel: active 30d,4820.0,4820.0,True
+Funnel: churn proxy count,6758.0,4307.0,False

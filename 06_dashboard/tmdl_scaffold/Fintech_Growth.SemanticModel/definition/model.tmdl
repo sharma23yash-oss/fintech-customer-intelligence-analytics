@@ -1,0 +1,17 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+
+ref table DimDate
+ref table DimCampaign
+ref table DimCity
+ref table DimDevice
+ref table DimSegment
+ref table DimStage
+ref table FactCustomer
+ref table FactActivity
+ref table FactTicket
+ref table _Measures
+
+ref expression DataFolder

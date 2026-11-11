@@ -1,0 +1,232 @@
+table FactCustomer
+
+	column CustomerID
+		dataType: string
+		summarizeBy: none
+		sourceColumn: CustomerID
+
+	column RegistrationDate
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: RegistrationDate
+
+	column CampaignKey
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: CampaignKey
+
+	column CityKey
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: CityKey
+
+	column DeviceKey
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: DeviceKey
+
+	column SegmentKey
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: SegmentKey
+
+	column AgeGroup
+		dataType: string
+		summarizeBy: none
+		sourceColumn: AgeGroup
+
+	column RiskProfile
+		dataType: string
+		summarizeBy: none
+		sourceColumn: RiskProfile
+
+	column FurthestStage
+		dataType: string
+		summarizeBy: none
+		sourceColumn: FurthestStage
+
+	column KYCDone
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: KYCDone
+
+	column BankLinked
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: BankLinked
+
+	column Deposited
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: Deposited
+
+	column Traded
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: Traded
+
+	column KYCDate
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: KYCDate
+
+	column BankDate
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: BankDate
+
+	column DepositDate
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: DepositDate
+
+	column FirstTradeDate
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: FirstTradeDate
+
+	column FirstDepositAmountINR
+		dataType: double
+		summarizeBy: none
+		sourceColumn: FirstDepositAmountINR
+
+	column FunnelMature
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: FunnelMature
+
+	column Eligible30d
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: Eligible30d
+
+	column Eligible90d
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: Eligible90d
+
+	column DaysRegToKYC
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: DaysRegToKYC
+
+	column DaysKYCToBank
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: DaysKYCToBank
+
+	column DaysBankToDeposit
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: DaysBankToDeposit
+
+	column DaysDepositToTrade
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: DaysDepositToTrade
+
+	column DaysRegToTrade
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: DaysRegToTrade
+
+	column Active30d
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: Active30d
+
+	column Inactive90d
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: Inactive90d
+
+	column TenureDays
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: TenureDays
+
+	column MonthsObserved
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: MonthsObserved
+
+	column TradeMonths
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: TradeMonths
+
+	column TradeMonths6m
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: TradeMonths6m
+
+	column TradingValue6mINR
+		dataType: double
+		summarizeBy: none
+		sourceColumn: TradingValue6mINR
+
+	column Dormant3m
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: Dormant3m
+
+	column M1Retained
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: M1Retained
+
+	column M3Retained
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: M3Retained
+
+	column M6Retained
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: M6Retained
+
+	column TicketCount
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: TicketCount
+
+	column UnresolvedTicketCount
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: UnresolvedTicketCount
+
+	column DaysSinceLastActivity
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: DaysSinceLastActivity
+
+	column InactivityBucket
+		dataType: string
+		summarizeBy: none
+		sourceColumn: InactivityBucket
+		sortByColumn: InactivitySort
+
+	column InactivitySort
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: InactivitySort
+
+	partition FactCustomer = m
+		mode: import
+		source =
+				let
+				    Source   = Csv.Document(File.Contents(DataFolder & "\FactCustomer.csv"), [Delimiter = ",", Columns = 42, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed    = Table.TransformColumnTypes(Promoted, {{"CustomerID", type text}, {"RegistrationDate", type date}, {"CampaignKey", type text}, {"CityKey", type text}, {"DeviceKey", type text}, {"SegmentKey", Int64.Type}, {"AgeGroup", type text}, {"RiskProfile", type text}, {"FurthestStage", type text}, {"KYCDone", Int64.Type}, {"BankLinked", Int64.Type}, {"Deposited", Int64.Type}, {"Traded", Int64.Type}, {"KYCDate", type date}, {"BankDate", type date}, {"DepositDate", type date}, {"FirstTradeDate", type date}, {"FirstDepositAmountINR", type number}, {"FunnelMature", Int64.Type}, {"Eligible30d", Int64.Type}, {"Eligible90d", Int64.Type}, {"DaysRegToKYC", Int64.Type}, {"DaysKYCToBank", Int64.Type}, {"DaysBankToDeposit", Int64.Type}, {"DaysDepositToTrade", Int64.Type}, {"DaysRegToTrade", Int64.Type}, {"Active30d", Int64.Type}, {"Inactive90d", Int64.Type}, {"TenureDays", Int64.Type}, {"MonthsObserved", Int64.Type}, {"TradeMonths", Int64.Type}, {"TradeMonths6m", Int64.Type}, {"TradingValue6mINR", type number}, {"Dormant3m", Int64.Type}, {"M1Retained", Int64.Type}, {"M3Retained", Int64.Type}, {"M6Retained", Int64.Type}, {"TicketCount", Int64.Type}, {"UnresolvedTicketCount", Int64.Type}, {"DaysSinceLastActivity", Int64.Type}, {"InactivityBucket", type text}, {"InactivitySort", Int64.Type}}, "en-US")
+				in
+				    Typed

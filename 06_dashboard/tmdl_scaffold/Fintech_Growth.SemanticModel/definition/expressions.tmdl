@@ -1,0 +1,1 @@
+expression DataFolder = "C:\Path\To\fintech-customer-intelligence-analytics\06_dashboard\data" meta [IsParameterQuery = true, Type = "Text", IsParameterQueryRequired = true]

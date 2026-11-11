@@ -1,0 +1,4 @@
+device_type,mature_users,kyc,bank,deposit,trade,kyc_pct,bank_conv_pct,deposit_conv_pct,trade_conv_pct,reg_to_trade_pct
+iOS,2490,1823,1598,1246,989,73.21,87.66,77.97,79.37,39.72
+Android,5503,3834,3387,2588,2070,69.67,88.34,76.41,79.98,37.62
+Web,1123,772,660,506,403,68.74,85.49,76.67,79.64,35.89

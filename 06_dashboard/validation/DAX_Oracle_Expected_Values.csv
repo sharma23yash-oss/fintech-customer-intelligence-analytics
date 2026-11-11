@@ -1,0 +1,232 @@
+measure,context,oracle_value,reference,reference_source,tolerance,status
+Registered Customers,no filters,10000.0,10000.0,Phase3 n_users,0.0,MATCH
+Mature Customers,no filters,9116.0,9116.0,Phase3 n_mature,0.0,MATCH
+Mature KYC Users,no filters,6429.0,6429.0,Phase3 funnel,0.0,MATCH
+Mature Bank Linked Users,no filters,5645.0,5645.0,Phase3 funnel,0.0,MATCH
+Mature Funded Users,no filters,4340.0,4340.0,Phase3 funnel,0.0,MATCH
+Mature First Traders,no filters,3462.0,3462.0,Phase3 funnel,0.0,MATCH
+Mature Active 30d Traders,no filters,2808.0,2808.0,Phase4 KPI report (funnel_active30),0.0,MATCH
+KYC Completion Rate,no filters,0.7052435278630979,0.7052,Phase3 funnel (4dp),6e-05,MATCH
+Bank Link Conversion,no filters,0.8780525742728262,0.8781,Phase3 funnel (4dp),6e-05,MATCH
+First Deposit Conversion,no filters,0.7688219663418955,0.7688,Phase3 funnel (4dp),6e-05,MATCH
+First Trade Conversion,no filters,0.7976958525345622,0.7977,Phase3 funnel (4dp),6e-05,MATCH
+First Trade Activation Rate,no filters,0.3797718297498903,0.3798,Phase3 funnel (4dp),6e-05,MATCH
+M1 Retention,no filters,0.6758446687143485,0.6758446687143485,Phase3 results,1e-09,MATCH
+M3 Retention,no filters,0.5601291364003228,0.5601291364003228,Phase3 results,1e-09,MATCH
+M6 Retention,no filters,0.4070635721493441,0.4070635721493441,Phase3 results,1e-09,MATCH
+MAU,no filters,4611.0,4611.0,Phase3 mau_last,0.0,MATCH
+MAU Share of Customers,no filters,0.4611,0.4611,Phase3 mau_pct_last (4dp),6e-05,MATCH
+30-Day Retention,no filters,0.5400394910048267,0.5400394910048267,Phase3 active30,1e-09,MATCH
+Inactive 90d Rate,no filters,0.14867398874899546,0.14867398874899546,Phase3 inactive90,1e-09,MATCH
+Dormant 3m Rate,no filters,0.2195318805488297,0.2195318805488297,Phase3 dormant3m,1e-09,MATCH
+Repeat Trader Share,no filters,0.6928775888196667,0.6928775888196667,Phase3 results,1e-09,MATCH
+Withdrawal to Deposit Ratio,no filters,0.4105994570530809,0.4105994570530809,Phase3 wd_ratio_total,1e-06,MATCH
+Tickets,no filters,7614.0,7614.0,Phase3 results,0.0,MATCH
+Tickets per 1000 Customers,no filters,761.4,761.4,Phase3 results,0.05,MATCH
+Resolved Rate,no filters,0.8199369582348306,0.8199369582348306,Phase3 results,6e-05,MATCH
+Open Tickets,no filters,892.0,892.0,Phase3 results,0.0,MATCH
+Escalated Tickets,no filters,479.0,479.0,Phase3 results,0.0,MATCH
+Unresolved Tickets,no filters,1371.0,1371.0,Phase3 open + escalated,0.0,MATCH
+Avg Resolution Hours,no filters,10.888386993432643,10.888386993432643,Phase3 results,0.001,MATCH
+Median Resolution Hours,no filters,9.4,9.4,Phase3 results,0.05,MATCH
+P90 Resolution Hours,no filters,20.4,20.4,Phase3 results,0.05,MATCH
+CSAT,no filters,3.826685888194778,3.826685888194778,Phase3 results,0.0005,MATCH
+Backlog over 90 Days,no filters,563.0,563.0,Phase3 results,0.0,MATCH
+Within SLA Rate,no filters,0.9428159538683325,0.942815953868333,Phase4 Excel Support_Analysis!B15,1e-09,MATCH
+Funded Never Traded,no filters,976.0,976.0,Phase4 Excel Customer_Segmentation!C43,0.0,MATCH
+Funded Never Traded Deposits INR,no filters,8790482.77,8790482.77,Phase4 Excel Customer_Segmentation!C44,0.5,MATCH
+CAC,no filters,331.19921201674464,331.199212016745,Phase4 Excel Campaign_Analysis!O17 (blended paid CAC),1e-06,MATCH
+Total Campaign Spend,no filters,2690000.0,2690000.0,Phase4 Excel Campaign_Analysis!E18,0.0,MATCH
+Escalation Rate,no filters,0.06291042815865511,0.06291042815865511,Phase3 escalated_n / tickets,1e-09,MATCH
+Median Days Registration to First Trade,no filters,23.0,23.0,Phase3 results,0.05,MATCH
+Share of Funnel Losses|KYC Completed,no filters,0.42596702599873176,0.4259670259987317,Phase3 m2_bottlenecks,1e-09,MATCH
+Funnel Users Lost|KYC Completed,no filters,2687.0,2687.0,Phase3 m2_bottlenecks,0.0,MATCH
+Funnel Drop-off Rate|KYC Completed,no filters,0.29475647213690215,0.2947564721369021,Phase3 m2_bottlenecks,1e-09,MATCH
+Share of Funnel Losses|Bank Linked,no filters,0.12428662016487001,0.12428662016487,Phase3 m2_bottlenecks,1e-09,MATCH
+Funnel Users Lost|Bank Linked,no filters,784.0,784.0,Phase3 m2_bottlenecks,0.0,MATCH
+Funnel Drop-off Rate|Bank Linked,no filters,0.12194742572717375,0.1219474257271737,Phase3 m2_bottlenecks,1e-09,MATCH
+Share of Funnel Losses|First Deposit,no filters,0.20688015218769817,0.2068801521876981,Phase3 m2_bottlenecks,1e-09,MATCH
+Funnel Users Lost|First Deposit,no filters,1305.0,1305.0,Phase3 m2_bottlenecks,0.0,MATCH
+Funnel Drop-off Rate|First Deposit,no filters,0.23117803365810452,0.2311780336581045,Phase3 m2_bottlenecks,1e-09,MATCH
+Share of Funnel Losses|First Trade,no filters,0.1391883322764743,0.1391883322764743,Phase3 m2_bottlenecks,1e-09,MATCH
+Funnel Users Lost|First Trade,no filters,878.0,878.0,Phase3 m2_bottlenecks,0.0,MATCH
+Funnel Drop-off Rate|First Trade,no filters,0.2023041474654378,0.2023041474654378,Phase3 m2_bottlenecks,1e-09,MATCH
+Share of Funnel Losses|Active (30d),no filters,0.10367786937222574,0.1036778693722257,Phase3 m2_bottlenecks,1e-09,MATCH
+Funnel Users Lost|Active (30d),no filters,654.0,654.0,Phase3 m2_bottlenecks,0.0,MATCH
+Funnel Drop-off Rate|Active (30d),no filters,0.18890814558058924,0.1889081455805892,Phase3 m2_bottlenecks,1e-09,MATCH
+Median Days in Stage|KYC Completed,no filters,6.0,6.0,Phase3 funnel median_days,0.05,MATCH
+Median Days in Stage|Bank Linked,no filters,4.0,4.0,Phase3 funnel median_days,0.05,MATCH
+Median Days in Stage|First Deposit,no filters,7.0,7.0,Phase3 funnel median_days,0.05,MATCH
+Median Days in Stage|First Trade,no filters,6.0,6.0,Phase3 funnel median_days,0.05,MATCH
+Inactivity Share (Eligible)|0-7 d,no filters,0.13810881965774463,0.1381088196577446,Phase3 m3_inactivity_distribution,1e-09,MATCH
+Inactivity Share (Eligible)|8-30 d,no filters,0.40193067134708205,0.401930671347082,Phase3 m3_inactivity_distribution,1e-09,MATCH
+Inactivity Share (Eligible)|31-60 d,no filters,0.19218955682316805,0.192189556823168,Phase3 m3_inactivity_distribution,1e-09,MATCH
+Inactivity Share (Eligible)|61-90 d,no filters,0.1460070206230803,0.1460070206230803,Phase3 m3_inactivity_distribution,1e-09,MATCH
+Inactivity Share (Eligible)|91-120 d,no filters,0.12176393154892497,0.1217639315489249,Phase3 m3_inactivity_distribution,1e-09,MATCH
+Segment customers|01,no filters,601.0,601.0,Phase3 journey_segments,0.0,MATCH
+Segment customers|02,no filters,2831.0,2831.0,Phase3 journey_segments,0.0,MATCH
+Segment customers|03,no filters,818.0,818.0,Phase3 journey_segments,0.0,MATCH
+Segment customers|04,no filters,1333.0,1333.0,Phase3 journey_segments,0.0,MATCH
+Segment customers|05,no filters,881.0,881.0,Phase3 journey_segments,0.0,MATCH
+Segment customers|06,no filters,317.0,317.0,Phase3 journey_segments,0.0,MATCH
+Segment customers|07,no filters,1684.0,1684.0,Phase3 journey_segments,0.0,MATCH
+Segment customers|08,no filters,896.0,896.0,Phase3 journey_segments,0.0,MATCH
+Segment customers|09,no filters,352.0,352.0,Phase3 journey_segments,0.0,MATCH
+Segment customers|10,no filters,287.0,287.0,Phase3 journey_segments,0.0,MATCH
+Priority tickets|High,no filters,1171.0,1171.0,Phase3 m6_priority,1e-06,MATCH
+Priority tickets|Medium,no filters,3789.0,3789.0,Phase3 m6_priority,1e-06,MATCH
+Priority tickets|Low,no filters,2654.0,2654.0,Phase3 m6_priority,1e-06,MATCH
+Tickets|KYC & verification,no filters,1727.0,1727.0,Phase3 m6_ticket_categories,0.0,MATCH
+Median Resolution Hours|KYC & verification,no filters,9.5,9.5,Phase3 m6_ticket_categories,0.05,MATCH
+Tickets|Trading & orders,no filters,1313.0,1313.0,Phase3 m6_ticket_categories,0.0,MATCH
+Median Resolution Hours|Trading & orders,no filters,9.3,9.3,Phase3 m6_ticket_categories,0.05,MATCH
+Tickets|Bank linking,no filters,1246.0,1246.0,Phase3 m6_ticket_categories,0.0,MATCH
+Median Resolution Hours|Bank linking,no filters,9.6,9.6,Phase3 m6_ticket_categories,0.05,MATCH
+Tickets|Deposits & withdrawals,no filters,1198.0,1198.0,Phase3 m6_ticket_categories,0.0,MATCH
+Median Resolution Hours|Deposits & withdrawals,no filters,9.55,9.55,Phase3 m6_ticket_categories,0.05,MATCH
+Tickets|App navigation,no filters,892.0,892.0,Phase3 m6_ticket_categories,0.0,MATCH
+Median Resolution Hours|App navigation,no filters,9.7,9.7,Phase3 m6_ticket_categories,0.05,MATCH
+Tickets|Account access,no filters,732.0,732.0,Phase3 m6_ticket_categories,0.0,MATCH
+Median Resolution Hours|Account access,no filters,9.1,9.1,Phase3 m6_ticket_categories,0.05,MATCH
+Tickets|Fees & charges,no filters,506.0,506.0,Phase3 m6_ticket_categories,0.0,MATCH
+Median Resolution Hours|Fees & charges,no filters,9.05,9.05,Phase3 m6_ticket_categories,0.05,MATCH
+Registered Customers,campaign=CMP01,1091.0,1091.0,Phase3 Campaign_Performance,0.0,MATCH
+First Trade Activation Rate,campaign=CMP01,0.3546747967479675,0.3547,Phase3 Campaign_Performance (4dp),6e-05,MATCH
+M3 Retention,campaign=CMP01,0.5470085470085471,0.547,Phase3 Campaign_Performance (4dp),6e-05,MATCH
+CAC,campaign=CMP01,384.967919340055,384.9679,Phase3 Campaign_Performance,0.001,MATCH
+Cost per First Trade,campaign=CMP01,1085.4109817496108,1085.411,Phase3 Campaign_Performance,0.5,MATCH
+Cost per KYC,campaign=CMP01,548.9977284501655,548.9977,Phase3 Campaign_Performance,0.5,MATCH
+Registered Customers,campaign=CMP02,1553.0,1553.0,Phase3 Campaign_Performance,0.0,MATCH
+First Trade Activation Rate,campaign=CMP02,0.3735875706214689,0.3736,Phase3 Campaign_Performance (4dp),6e-05,MATCH
+M3 Retention,campaign=CMP02,0.544404973357016,0.5444,Phase3 Campaign_Performance (4dp),6e-05,MATCH
+CAC,campaign=CMP02,392.7881519639408,392.7882,Phase3 Campaign_Performance,0.001,MATCH
+Cost per First Trade,campaign=CMP02,1051.3951288864653,1051.3951,Phase3 Campaign_Performance,0.5,MATCH
+Cost per KYC,campaign=CMP02,536.8610262364288,536.861,Phase3 Campaign_Performance,0.5,MATCH
+Registered Customers,campaign=CMP03,1376.0,1376.0,Phase3 Campaign_Performance,0.0,MATCH
+First Trade Activation Rate,campaign=CMP03,0.2999210734017364,0.2999,Phase3 Campaign_Performance (4dp),6e-05,MATCH
+M3 Retention,campaign=CMP03,0.5485110470701249,0.5485,Phase3 Campaign_Performance (4dp),6e-05,MATCH
+CAC,campaign=CMP03,276.16279069767444,276.1628,Phase3 Campaign_Performance,0.001,MATCH
+Cost per First Trade,campaign=CMP03,920.7848837209302,920.7849,Phase3 Campaign_Performance,0.5,MATCH
+Cost per KYC,campaign=CMP03,416.05024472527174,416.0502,Phase3 Campaign_Performance,0.5,MATCH
+Registered Customers,campaign=CMP04,1168.0,1168.0,Phase3 Campaign_Performance,0.0,MATCH
+First Trade Activation Rate,campaign=CMP04,0.3077651515151515,0.3078,Phase3 Campaign_Performance (4dp),6e-05,MATCH
+M3 Retention,campaign=CMP04,0.5310344827586206,0.531,Phase3 Campaign_Performance (4dp),6e-05,MATCH
+CAC,campaign=CMP04,385.2739726027397,385.274,Phase3 Campaign_Performance,0.001,MATCH
+Cost per First Trade,campaign=CMP04,1251.8440463645943,1251.844,Phase3 Campaign_Performance,0.5,MATCH
+Cost per KYC,campaign=CMP04,587.0841487279844,587.0841,Phase3 Campaign_Performance,0.5,MATCH
+Registered Customers,campaign=CMP05,1036.0,1036.0,Phase3 Campaign_Performance,0.0,MATCH
+First Trade Activation Rate,campaign=CMP05,0.5289079229122056,0.5289,Phase3 Campaign_Performance (4dp),6e-05,MATCH
+M3 Retention,campaign=CMP05,0.612,0.612,Phase3 Campaign_Performance (4dp),6e-05,MATCH
+CAC,campaign=CMP05,231.66023166023166,231.6602,Phase3 Campaign_Performance,0.001,MATCH
+Cost per First Trade,campaign=CMP05,437.99728010254324,437.9973,Phase3 Campaign_Performance,0.5,MATCH
+Cost per KYC,campaign=CMP05,296.80474124918567,296.8047,Phase3 Campaign_Performance,0.5,MATCH
+Registered Customers,campaign=CMP06,757.0,757.0,Phase3 Campaign_Performance,0.0,MATCH
+First Trade Activation Rate,campaign=CMP06,0.33670520231213874,0.3367,Phase3 Campaign_Performance (4dp),6e-05,MATCH
+M3 Retention,campaign=CMP06,0.5435168738898757,0.5435,Phase3 Campaign_Performance (4dp),6e-05,MATCH
+CAC,campaign=CMP06,409.5112285336856,409.5112,Phase3 Campaign_Performance,0.001,MATCH
+Cost per First Trade,campaign=CMP06,1216.2307731558387,1216.2308,Phase3 Campaign_Performance,0.5,MATCH
+Cost per KYC,campaign=CMP06,604.22552269789,604.2255,Phase3 Campaign_Performance,0.5,MATCH
+Registered Customers,campaign=CMP07,1174.0,1174.0,Phase3 Campaign_Performance,0.0,MATCH
+First Trade Activation Rate,campaign=CMP07,0.4655493482309125,0.4655,Phase3 Campaign_Performance (4dp),6e-05,MATCH
+M3 Retention,campaign=CMP07,0.6137931034482759,0.6138,Phase3 Campaign_Performance (4dp),6e-05,MATCH
+CAC,campaign=CMP07,,,"Organic: blank, not zero",0.0,MATCH
+Registered Customers,campaign=CMP08,704.0,704.0,Phase3 Campaign_Performance,0.0,MATCH
+First Trade Activation Rate,campaign=CMP08,0.48148148148148145,0.4815,Phase3 Campaign_Performance (4dp),6e-05,MATCH
+M3 Retention,campaign=CMP08,0.5864077669902913,0.5864,Phase3 Campaign_Performance (4dp),6e-05,MATCH
+CAC,campaign=CMP08,,,"Organic: blank, not zero",0.0,MATCH
+Registered Customers,campaign=CMP09,580.0,580.0,Phase3 Campaign_Performance,0.0,MATCH
+First Trade Activation Rate,campaign=CMP09,0.31144465290806755,0.3114,Phase3 Campaign_Performance (4dp),6e-05,MATCH
+M3 Retention,campaign=CMP09,0.5077262693156733,0.5077,Phase3 Campaign_Performance (4dp),6e-05,MATCH
+CAC,campaign=CMP09,327.58620689655174,327.5862,Phase3 Campaign_Performance,0.001,MATCH
+Cost per First Trade,campaign=CMP09,1051.8280016618198,1051.828,Phase3 Campaign_Performance,0.5,MATCH
+Cost per KYC,campaign=CMP09,509.0479541570323,509.048,Phase3 Campaign_Performance,0.5,MATCH
+Registered Customers,campaign=CMP10,561.0,561.0,Phase3 Campaign_Performance,0.0,MATCH
+First Trade Activation Rate,campaign=CMP10,0.33984375,0.3398,Phase3 Campaign_Performance (4dp),6e-05,MATCH
+M3 Retention,campaign=CMP10,0.5597189695550351,0.5597,Phase3 Campaign_Performance (4dp),6e-05,MATCH
+CAC,campaign=CMP10,160.42780748663102,160.4278,Phase3 Campaign_Performance,0.001,MATCH
+Cost per First Trade,campaign=CMP10,472.0634335238798,472.0634,Phase3 Campaign_Performance,0.5,MATCH
+Cost per KYC,campaign=CMP10,236.71192343848728,236.7119,Phase3 Campaign_Performance,0.5,MATCH
+Median Paid Cost per KYC,no filters,522.9544901967305,522.9545,Phase3 Campaign_Performance (median of paid campaigns),0.5,MATCH
+Median Paid Cost per First Trade,no filters,1051.6115652741425,1051.61155,Phase3 Campaign_Performance (median of paid campaigns),0.5,MATCH
+Registered Customers,channel=Paid Search,2644.0,2644.0,Phase3 m1_channel_performance,0.0,MATCH
+First Trade Activation Rate,channel=Paid Search,0.36583333333333334,0.3658333333333333,Phase3 m1_channel_performance (4dp),6e-05,MATCH
+M3 Retention,channel=Paid Search,0.5455012853470437,0.5455012853470437,Phase3 m1_channel_performance (4dp),6e-05,MATCH
+CAC,channel=Paid Search,389.56127080181545,389.56127080181545,Phase3 m1_channel_performance,0.001,MATCH
+Registered Customers,channel=Paid Social,2544.0,2544.0,Phase3 m1_channel_performance,0.0,MATCH
+First Trade Activation Rate,channel=Paid Social,0.30348687042617306,0.303486870426173,Phase3 m1_channel_performance (4dp),6e-05,MATCH
+M3 Retention,channel=Paid Social,0.5405546834118262,0.5405546834118262,Phase3 m1_channel_performance (4dp),6e-05,MATCH
+CAC,channel=Paid Social,326.25786163522014,326.25786163522014,Phase3 m1_channel_performance,0.001,MATCH
+Registered Customers,channel=Organic,1878.0,1878.0,Phase3 m1_channel_performance,0.0,MATCH
+First Trade Activation Rate,channel=Organic,0.4715447154471545,0.4715447154471545,Phase3 m1_channel_performance (4dp),6e-05,MATCH
+M3 Retention,channel=Organic,0.6036101083032491,0.6036101083032491,Phase3 m1_channel_performance (4dp),6e-05,MATCH
+CAC,channel=Organic,,,"Organic: blank, not zero",0.0,MATCH
+Registered Customers,channel=Referral,1036.0,1036.0,Phase3 m1_channel_performance,0.0,MATCH
+First Trade Activation Rate,channel=Referral,0.5289079229122056,0.5289079229122056,Phase3 m1_channel_performance (4dp),6e-05,MATCH
+M3 Retention,channel=Referral,0.612,0.612,Phase3 m1_channel_performance (4dp),6e-05,MATCH
+CAC,channel=Referral,231.66023166023166,231.6602316602317,Phase3 m1_channel_performance,0.001,MATCH
+Registered Customers,channel=Affiliate,757.0,757.0,Phase3 m1_channel_performance,0.0,MATCH
+First Trade Activation Rate,channel=Affiliate,0.33670520231213874,0.3367052023121387,Phase3 m1_channel_performance (4dp),6e-05,MATCH
+M3 Retention,channel=Affiliate,0.5435168738898757,0.5435168738898757,Phase3 m1_channel_performance (4dp),6e-05,MATCH
+CAC,channel=Affiliate,409.5112285336856,409.5112285336856,Phase3 m1_channel_performance,0.001,MATCH
+Registered Customers,channel=Partnerships,580.0,580.0,Phase3 m1_channel_performance,0.0,MATCH
+First Trade Activation Rate,channel=Partnerships,0.31144465290806755,0.3114446529080675,Phase3 m1_channel_performance (4dp),6e-05,MATCH
+M3 Retention,channel=Partnerships,0.5077262693156733,0.5077262693156733,Phase3 m1_channel_performance (4dp),6e-05,MATCH
+CAC,channel=Partnerships,327.58620689655174,327.58620689655174,Phase3 m1_channel_performance,0.001,MATCH
+Registered Customers,channel=CRM,561.0,561.0,Phase3 m1_channel_performance,0.0,MATCH
+First Trade Activation Rate,channel=CRM,0.33984375,0.33984375,Phase3 m1_channel_performance (4dp),6e-05,MATCH
+M3 Retention,channel=CRM,0.5597189695550351,0.5597189695550351,Phase3 m1_channel_performance (4dp),6e-05,MATCH
+CAC,channel=CRM,160.42780748663102,160.42780748663102,Phase3 m1_channel_performance,0.001,MATCH
+Registered Customers,channel=Referral,1036.0,1036.0,SQL,0.0,MATCH
+First Trade Activation Rate,channel=Referral,0.5289079229122056,0.5289079229122056,SQL,1e-09,MATCH
+KYC Completion Rate,channel=Referral,0.7805139186295503,0.7805139186295503,SQL,1e-09,MATCH
+Tickets,channel=Referral,744.0,744.0,SQL,0.0,MATCH
+MAU,channel=Referral,514.0,514.0,SQL,0.0,MATCH
+M3 Retention,channel=Referral,0.612,0.612,SQL,1e-09,MATCH
+Dormant 3m Rate,channel=Referral,0.15466666666666667,0.15466666666666667,SQL,1e-09,MATCH
+Median Resolution Hours,channel=Referral,9.1,9.1,SQL,1e-09,MATCH
+Registered Customers,"city=Pune, device=Android",572.0,572.0,SQL,0.0,MATCH
+First Trade Activation Rate,"city=Pune, device=Android",0.37093690248565964,0.37093690248565964,SQL,1e-09,MATCH
+KYC Completion Rate,"city=Pune, device=Android",0.7170172084130019,0.7170172084130019,SQL,1e-09,MATCH
+Tickets,"city=Pune, device=Android",446.0,446.0,SQL,0.0,MATCH
+MAU,"city=Pune, device=Android",248.0,248.0,SQL,0.0,MATCH
+M3 Retention,"city=Pune, device=Android",0.5547785547785548,0.5547785547785548,SQL,1e-09,MATCH
+Dormant 3m Rate,"city=Pune, device=Android",0.23076923076923078,0.23076923076923078,SQL,1e-09,MATCH
+Median Resolution Hours,"city=Pune, device=Android",9.5,9.5,SQL,1e-09,MATCH
+Registered Customers,segment=9,352.0,352.0,SQL,0.0,MATCH
+First Trade Activation Rate,segment=9,1.0,1.0,SQL,1e-09,MATCH
+KYC Completion Rate,segment=9,1.0,1.0,SQL,1e-09,MATCH
+Tickets,segment=9,206.0,206.0,SQL,0.0,MATCH
+MAU,segment=9,0.0,0.0,SQL,0.0,MATCH
+M3 Retention,segment=9,0.5823863636363636,0.5823863636363636,SQL,1e-09,MATCH
+Dormant 3m Rate,segment=9,1.0,1.0,SQL,1e-09,MATCH
+Median Resolution Hours,segment=9,9.2,9.2,SQL,1e-09,MATCH
+Registered Customers,campaign=CMP04,1168.0,1168.0,SQL,0.0,MATCH
+First Trade Activation Rate,campaign=CMP04,0.3077651515151515,0.3077651515151515,SQL,1e-09,MATCH
+KYC Completion Rate,campaign=CMP04,0.65625,0.65625,SQL,1e-09,MATCH
+Tickets,campaign=CMP04,892.0,892.0,SQL,0.0,MATCH
+MAU,campaign=CMP04,504.0,504.0,SQL,0.0,MATCH
+M3 Retention,campaign=CMP04,0.5310344827586206,0.5310344827586206,SQL,1e-09,MATCH
+Dormant 3m Rate,campaign=CMP04,0.2597701149425287,0.2597701149425287,SQL,1e-09,MATCH
+Median Resolution Hours,campaign=CMP04,9.2,9.2,SQL,1e-09,MATCH
+CAC,channel=Referral,231.66023166023166,231.66023166023166,SQL,1e-09,MATCH
+Cost per First Trade,campaign=CMP04,1251.8440463645943,1251.8440463645943,SQL,1e-06,MATCH
+Registered Customers,months=Aug 26,850.0,850.0,SQL,0.0,MATCH
+MAU,months=Aug 26,4135.0,4135.0,SQL,0.0,MATCH
+Tickets,months=Aug 26,1026.0,1026.0,SQL,0.0,MATCH
+Trading Value INR mn,months=Aug 26,26.360806130000004,26.36080613,SQL,1e-06,MATCH
+Customers To Date,months=Aug 26,8284.0,8284.0,SQL,0.0,MATCH
+Tickets per 1000 Customers,months=Aug 26,123.85321100917432,123.85321100917432,SQL,1e-09,MATCH
+Registrations MoM %,months=Aug 26,0.0,0.0,SQL,1e-09,MATCH
+MAU MoM %,months=Aug 26,0.05998461932837734,0.05998461932837729,SQL,1e-09,MATCH
+Registrations 3M Avg,months=Aug 26,829.0,829.0,SQL,1e-09,MATCH
+Registered YTD,month=Aug 26,6581.0,6581.0,SQL,0.0,MATCH
+Cohort Retention,"cohort=Mar 26, M3",0.5669099756690997,0.5669099756690997,SQL,1e-09,MATCH
+Cohort Size,cohort=Mar 26,822.0,822.0,SQL,0.0,MATCH
+Cost Efficiency Index,campaign=CMP01,0.9688602593452798,0.9688602593452798,Recomputed from per-campaign costs,1e-09,MATCH
+Cost Efficiency Index,campaign=CMP02,1.000205856372862,1.000205856372862,Recomputed from per-campaign costs,1e-09,MATCH
+Cost Efficiency Index,campaign=CMP03,1.1420816999346648,1.1420816999346648,Recomputed from per-campaign costs,1e-09,MATCH
+Cost Efficiency Index,campaign=CMP04,0.8400499793309438,0.8400499793309438,Recomputed from per-campaign costs,1e-09,MATCH
+Cost Efficiency Index,campaign=CMP05,2.4009545562199404,2.4009545562199404,Recomputed from per-campaign costs,1e-09,MATCH
+Cost Efficiency Index,campaign=CMP06,0.864648049107862,0.864648049107862,Recomputed from per-campaign costs,1e-09,MATCH
+Cost Efficiency Index,campaign=CMP09,0.9997942283459508,0.9997942283459508,Recomputed from per-campaign costs,1e-09,MATCH
+Cost Efficiency Index,campaign=CMP10,2.227691218156904,2.227691218156904,Recomputed from per-campaign costs,1e-09,MATCH

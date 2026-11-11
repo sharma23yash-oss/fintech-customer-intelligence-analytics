@@ -1,0 +1,11 @@
+campaign_id,campaign_name,channel,campaign_spend_inr,is_paid,registered_users,mature_users,first_trade_rate_mature_pct,kyc_rate_mature_pct,m3_retention_pct,dormant_3m_pct,cac_inr,cost_per_first_trader_inr,rank_first_trade,rank_m3_retention,rank_cost_per_first_trader_paid
+CMP05,Customer Referral,Referral,240000,1,1036,934,52.89,78.05,61.2,15.47,231.66,438.0,1,2,1.0
+CMP08,Organic Social,Organic,0,0,704,648,48.15,74.23,58.64,16.31,,,2,3,
+CMP07,Organic Search,Organic,0,0,1174,1074,46.55,74.49,61.38,18.05,,,3,1,
+CMP02,Generic Search,Paid Search,610000,1,1553,1416,37.36,73.16,54.44,23.36,392.79,1051.4,4,7,4.0
+CMP01,Brand Search,Paid Search,420000,1,1091,984,35.47,70.12,54.7,23.44,384.97,1085.41,5,6,6.0
+CMP10,Email Nurture,CRM,90000,1,561,512,33.98,67.77,55.97,22.01,160.43,472.06,6,4,2.0
+CMP06,Finance Affiliate,Affiliate,310000,1,757,692,33.67,67.77,54.35,25.22,409.51,1216.23,7,8,7.0
+CMP09,Campus Events,Partnerships,190000,1,580,533,31.14,64.35,50.77,23.84,327.59,1051.83,8,10,5.0
+CMP04,Video Awareness,Paid Social,450000,1,1168,1056,30.78,65.62,53.1,25.98,385.27,1251.84,9,9,8.0
+CMP03,Education Social,Paid Social,380000,1,1376,1267,29.99,66.38,54.85,24.02,276.16,920.78,10,5,3.0

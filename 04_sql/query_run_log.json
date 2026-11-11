@@ -1,0 +1,491 @@
+[
+ {
+  "id": "Q01",
+  "title": "Total registrations",
+  "rows": 1,
+  "cols": [
+   "total_registrations",
+   "mature_cohort_users",
+   "immature_oct26_users",
+   "first_registration",
+   "last_registration",
+   "months_covered",
+   "avg_registrations_per_month"
+  ],
+  "file": "Q01_total_registrations.csv"
+ },
+ {
+  "id": "Q02",
+  "title": "Monthly acquisition with month-over-month growth",
+  "rows": 12,
+  "cols": [
+   "registration_month",
+   "registrations",
+   "prev_month",
+   "mom_growth_pct",
+   "cumulative_registrations"
+  ],
+  "file": "Q02_monthly_acquisition_with_month_over_month_gro.csv"
+ },
+ {
+  "id": "Q03",
+  "title": "Channel-wise acquisition",
+  "rows": 7,
+  "cols": [
+   "acquisition_channel",
+   "registrations",
+   "share_pct",
+   "mature_users",
+   "volume_rank"
+  ],
+  "file": "Q03_channel_wise_acquisition.csv"
+ },
+ {
+  "id": "Q04",
+  "title": "Campaign CAC and cost per first trader",
+  "rows": 10,
+  "cols": [
+   "campaign_id",
+   "campaign_name",
+   "channel",
+   "campaign_spend_inr",
+   "registered_users",
+   "cac_inr",
+   "first_trade_rate_mature_pct",
+   "cost_per_first_trader_inr"
+  ],
+  "file": "Q04_campaign_cac_and_cost_per_first_trader.csv"
+ },
+ {
+  "id": "Q05",
+  "title": "KYC completion rate (registered -> KYC)",
+  "rows": 8,
+  "cols": [
+   "acquisition_channel",
+   "mature_registered",
+   "kyc_completed",
+   "kyc_completion_pct",
+   "avg_days_to_kyc"
+  ],
+  "file": "Q05_kyc_completion_rate_registered_kyc.csv"
+ },
+ {
+  "id": "Q06",
+  "title": "Bank-link conversion (KYC -> bank linked)",
+  "rows": 8,
+  "cols": [
+   "acquisition_channel",
+   "kyc_completed",
+   "bank_linked",
+   "bank_link_conv_pct",
+   "avg_days_kyc_to_bank"
+  ],
+  "file": "Q06_bank_link_conversion_kyc_bank_linked.csv"
+ },
+ {
+  "id": "Q07",
+  "title": "First-deposit conversion (bank linked -> funded)",
+  "rows": 8,
+  "cols": [
+   "acquisition_channel",
+   "bank_linked",
+   "first_deposit",
+   "deposit_conv_pct",
+   "avg_first_deposit_inr"
+  ],
+  "file": "Q07_first_deposit_conversion_bank_linked_funded.csv"
+ },
+ {
+  "id": "Q08",
+  "title": "First-trade activation (funded -> first trade)",
+  "rows": 8,
+  "cols": [
+   "acquisition_channel",
+   "funded",
+   "first_traders",
+   "activation_pct_of_funded",
+   "reg_to_first_trade_pct",
+   "avg_days_deposit_to_trade"
+  ],
+  "file": "Q08_first_trade_activation_funded_first_trade.csv"
+ },
+ {
+  "id": "Q09",
+  "title": "Funnel drop-offs by stage",
+  "rows": 6,
+  "cols": [
+   "step",
+   "stage",
+   "reached",
+   "pct_of_registered",
+   "step_conversion_pct",
+   "users_lost_at_step",
+   "share_of_all_losses_pct"
+  ],
+  "file": "Q09_funnel_drop_offs_by_stage.csv"
+ },
+ {
+  "id": "Q10",
+  "title": "City-wise performance",
+  "rows": 11,
+  "cols": [
+   "city",
+   "registrations",
+   "mature_users",
+   "kyc_pct",
+   "first_trade_pct",
+   "m3_retention_pct",
+   "tickets_per_1000_users"
+  ],
+  "file": "Q10_city_wise_performance.csv"
+ },
+ {
+  "id": "Q11",
+  "title": "Device-wise performance",
+  "rows": 3,
+  "cols": [
+   "device_type",
+   "registrations",
+   "share_pct",
+   "kyc_pct",
+   "first_trade_pct",
+   "m3_retention_pct",
+   "tickets_per_1000_users"
+  ],
+  "file": "Q11_device_wise_performance.csv"
+ },
+ {
+  "id": "Q12",
+  "title": "Monthly active users (MAU) with new vs existing split",
+  "rows": 12,
+  "cols": [
+   "activity_month",
+   "mau",
+   "mau_new",
+   "mau_existing",
+   "registered_to_date",
+   "mau_pct_of_registered"
+  ],
+  "file": "Q12_monthly_active_users_mau_with_new_vs_existing.csv"
+ },
+ {
+  "id": "Q13",
+  "title": "Cohort retention matrix (M0-M6)",
+  "rows": 13,
+  "cols": [
+   "cohort",
+   "cohort_users",
+   "m0_pct",
+   "m1_pct",
+   "m2_pct",
+   "m3_pct",
+   "m4_pct",
+   "m5_pct",
+   "m6_pct"
+  ],
+  "file": "Q13_cohort_retention_matrix_m0_m6.csv"
+ },
+ {
+  "id": "Q14",
+  "title": "Customer inactivity (recency buckets)",
+  "rows": 4,
+  "cols": [
+   "recency_bucket",
+   "users",
+   "share_pct",
+   "avg_trading_value_6m_inr"
+  ],
+  "file": "Q14_customer_inactivity_recency_buckets.csv"
+ },
+ {
+  "id": "Q15",
+  "title": "Churn proxy: dormant for three months",
+  "rows": 8,
+  "cols": [
+   "acquisition_channel",
+   "eligible_users",
+   "dormant_users",
+   "dormant_3m_pct"
+  ],
+  "file": "Q15_churn_proxy_dormant_for_three_months.csv"
+ },
+ {
+  "id": "Q16",
+  "title": "Repeat trading behaviour",
+  "rows": 8,
+  "cols": [
+   "acquisition_channel",
+   "users_observed_4m_plus",
+   "ever_traded_users",
+   "repeat_pct_of_traders",
+   "repeat3_pct_of_traders"
+  ],
+  "file": "Q16_repeat_trading_behaviour.csv"
+ },
+ {
+  "id": "Q17",
+  "title": "Customer segmentation (journey segments)",
+  "rows": 10,
+  "cols": [
+   "journey_segment",
+   "users",
+   "share_pct",
+   "avg_tenure_days",
+   "avg_trading_value_6m_inr",
+   "tickets_per_user"
+  ],
+  "file": "Q17_customer_segmentation_journey_segments.csv"
+ },
+ {
+  "id": "Q18",
+  "title": "Support ticket categories",
+  "rows": 7,
+  "cols": [
+   "category",
+   "tickets",
+   "share_pct",
+   "users_affected",
+   "high_priority",
+   "escalated",
+   "unresolved"
+  ],
+  "file": "Q18_support_ticket_categories.csv"
+ },
+ {
+  "id": "Q19",
+  "title": "Average and median resolution time",
+  "rows": 8,
+  "cols": [
+   "category",
+   "resolved_tickets",
+   "mean_hours",
+   "median_hours",
+   "max_hours"
+  ],
+  "file": "Q19_average_and_median_resolution_time.csv"
+ },
+ {
+  "id": "Q20",
+  "title": "CSAT by category",
+  "rows": 8,
+  "cols": [
+   "category",
+   "rated_tickets",
+   "avg_csat",
+   "satisfied_pct_4_5",
+   "dissatisfied_pct_1_2"
+  ],
+  "file": "Q20_csat_by_category.csv"
+ },
+ {
+  "id": "Q21",
+  "title": "Campaign performance ranking",
+  "rows": 10,
+  "cols": [
+   "campaign_id",
+   "campaign_name",
+   "channel",
+   "first_trade_pct",
+   "m3_retention_pct",
+   "cost_per_first_trader_inr",
+   "rank_first_trade",
+   "rank_m3",
+   "rank_cost_efficiency_paid"
+  ],
+  "file": "Q21_campaign_performance_ranking.csv"
+ },
+ {
+  "id": "Q22",
+  "title": "Customer acquisition by month and channel",
+  "rows": 12,
+  "cols": [
+   "registration_month",
+   "total",
+   "paid_search",
+   "paid_social",
+   "organic",
+   "referral",
+   "affiliate",
+   "partnerships",
+   "crm",
+   "became_traders_asof",
+   "trader_rate_pct_asof"
+  ],
+  "file": "Q22_customer_acquisition_by_month_and_channel.csv"
+ },
+ {
+  "id": "Q23",
+  "title": "High-potential customers (funded, not yet trading, high deposit)",
+  "rows": 50,
+  "cols": [
+   "user_id",
+   "acquisition_channel",
+   "city",
+   "device_type",
+   "first_deposit_inr",
+   "deposit_date_asof",
+   "days_since_deposit"
+  ],
+  "file": "Q23_high_potential_customers_funded_not_yet_tradi.csv"
+ },
+ {
+  "id": "Q24",
+  "title": "Deposited but inactive users",
+  "rows": 7,
+  "cols": [
+   "acquisition_channel",
+   "funded_never_traded",
+   "avg_first_deposit_inr",
+   "idle_first_deposits_inr",
+   "avg_days_idle",
+   "idle_over_14d"
+  ],
+  "file": "Q24_deposited_but_inactive_users.csv"
+ },
+ {
+  "id": "Q25",
+  "title": "KYC-pending customers (ageing)",
+  "rows": 4,
+  "cols": [
+   "pending_age_bucket",
+   "kyc_pending_users",
+   "users_with_kyc_ticket",
+   "pct_with_kyc_ticket"
+  ],
+  "file": "Q25_kyc_pending_customers_ageing.csv"
+ },
+ {
+  "id": "Q26",
+  "title": "Customers with repeated support tickets",
+  "rows": 5,
+  "cols": [
+   "tickets",
+   "users",
+   "unresolved_tickets",
+   "avg_distinct_categories",
+   "avg_csat",
+   "dormant_3m_pct"
+  ],
+  "file": "Q26_customers_with_repeated_support_tickets.csv"
+ },
+ {
+  "id": "Q27",
+  "title": "Channel-wise customer quality scorecard",
+  "rows": 7,
+  "cols": [
+   "acquisition_channel",
+   "registrations",
+   "first_trade_pct",
+   "m3_retention_pct",
+   "dormant_3m_pct",
+   "avg_6m_trading_value_traders_inr",
+   "avg_first_deposit_inr",
+   "tickets_per_1000_users"
+  ],
+  "file": "Q27_channel_wise_customer_quality_scorecard.csv"
+ },
+ {
+  "id": "Q28",
+  "title": "Customer lifetime activity by registration cohort",
+  "rows": 12,
+  "cols": [
+   "cohort",
+   "users",
+   "avg_months_observed",
+   "avg_active_months",
+   "avg_trade_months",
+   "avg_lifetime_trades",
+   "avg_lifetime_trading_value_inr",
+   "avg_lifetime_deposits_inr",
+   "avg_activity_ratio"
+  ],
+  "file": "Q28_customer_lifetime_activity_by_registration_co.csv"
+ },
+ {
+  "id": "Q29",
+  "title": "Monthly trading volume",
+  "rows": 12,
+  "cols": [
+   "activity_month",
+   "trading_users",
+   "trades",
+   "trading_value_inr_mn",
+   "deposits_inr_mn",
+   "withdrawals_inr_mn",
+   "net_flow_inr_mn",
+   "trades_per_trading_user"
+  ],
+  "file": "Q29_monthly_trading_volume.csv"
+ },
+ {
+  "id": "Q30",
+  "title": "Operational bottleneck analysis (stage losses + related support load)",
+  "rows": 5,
+  "cols": [
+   "step",
+   "stage",
+   "at_risk",
+   "lost",
+   "drop_rate_pct",
+   "share_of_all_losses_pct",
+   "rank_by_users_lost",
+   "tickets",
+   "tickets_while_pending",
+   "avg_resolution_h"
+  ],
+  "file": "Q30_operational_bottleneck_analysis_stage_losses_.csv"
+ },
+ {
+  "id": "Q31",
+  "title": "Time-to-first-trade by channel (median via window)",
+  "rows": 7,
+  "cols": [
+   "acquisition_channel",
+   "traders",
+   "mean_days",
+   "median_days",
+   "max_days"
+  ],
+  "file": "Q31_time_to_first_trade_by_channel_median_via_win.csv"
+ },
+ {
+  "id": "Q32",
+  "title": "Support ticket backlog ageing",
+  "rows": 12,
+  "cols": [
+   "backlog_age_bucket",
+   "priority",
+   "open_tickets",
+   "escalated_tickets",
+   "unresolved_total"
+  ],
+  "file": "Q32_support_ticket_backlog_ageing.csv"
+ },
+ {
+  "id": "Q33",
+  "title": "Support exposure vs dormancy (descriptive)",
+  "rows": 3,
+  "cols": [
+   "support_status",
+   "eligible_users",
+   "dormant_3m_pct",
+   "m3_retention_pct"
+  ],
+  "file": "Q33_support_exposure_vs_dormancy_descriptive.csv"
+ },
+ {
+  "id": "Q34",
+  "title": "Source reconciliation: users table vs monthly activity",
+  "rows": 1,
+  "cols": [
+   "trade_both_sources",
+   "trade_users_only",
+   "trade_monthly_only",
+   "trade_neither",
+   "trade_source_conflict_pct",
+   "users_table_trader_pct",
+   "monthly_table_trader_pct"
+  ],
+  "file": "Q34_source_reconciliation_users_table_vs_monthly_.csv"
+ }
+]

@@ -1,0 +1,322 @@
+{
+  "summary": {
+    "snapshot": "2026-10-31",
+    "customers": 10000,
+    "flagged": 6887,
+    "flagged_pct": 68.9,
+    "by_primary_category": {
+      "KYC_PENDING": 2831,
+      "FIRST_DEPOSIT_PENDING": 1333,
+      "FIRST_TRADE_PENDING": 881,
+      "BANK_LINK_PENDING": 818,
+      "INACTIVITY_RISK": 654,
+      "SUPPORT_UNRESOLVED": 321,
+      "REPEATED_SUPPORT_ISSUES": 49
+    },
+    "priority_bands": {
+      "Medium": 3200,
+      "Low": 2529,
+      "High": 1158
+    },
+    "within_window_not_flagged": 543,
+    "low_confidence_flagged": 4550,
+    "oracle_primary_category_agreement_pct": 100.0,
+    "windows_days": {
+      "kyc": 11,
+      "bank": 7,
+      "deposit": 14,
+      "trade": 11
+    },
+    "checks_passed": 46,
+    "checks_total": 46
+  },
+  "checks": [
+    {
+      "check": "Input: user_id unique",
+      "result": "PASS",
+      "detail": "10,000 users"
+    },
+    {
+      "check": "Input: ticket_id unique",
+      "result": "PASS",
+      "detail": "7,614 tickets"
+    },
+    {
+      "check": "Input: all tickets map to a user",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Input: no missing registration dates",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Input: every record labelled SYNTHETIC",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Cleaning found nothing to drop in the source data",
+      "result": "PASS",
+      "detail": "{}"
+    },
+    {
+      "check": "Eligibility: every registered customer analysed exactly once",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Eligibility: no flagged customer is inside its window",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Eligibility: every journey flag has dwell > window",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Eligibility: every WITHIN_WINDOW customer has dwell <= window",
+      "result": "PASS",
+      "detail": "543 customers deliberately not flagged"
+    },
+    {
+      "check": "Eligibility: inactivity flags only for traded customers with tenure >= 31 d and > 30 d inactive",
+      "result": "PASS",
+      "detail": "654 flagged"
+    },
+    {
+      "check": "Eligibility: nobody registered in the last 3 days is flagged for a journey step",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Oracle: same windows as engine",
+      "result": "PASS",
+      "detail": "[11, 7, 14, 11]"
+    },
+    {
+      "check": "Oracle: same population",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Oracle: 'stage_idx' agrees for all customers",
+      "result": "PASS",
+      "detail": "0 mismatches"
+    },
+    {
+      "check": "Oracle: 'is_flagged' agrees for all customers",
+      "result": "PASS",
+      "detail": "0 mismatches"
+    },
+    {
+      "check": "Oracle: 'friction_categories' agrees for all customers",
+      "result": "PASS",
+      "detail": "0 mismatches"
+    },
+    {
+      "check": "Oracle: 'primary_category' agrees for all customers",
+      "result": "PASS",
+      "detail": "0 mismatches"
+    },
+    {
+      "check": "Oracle: 'days_overdue' agrees for all customers",
+      "result": "PASS",
+      "detail": "0 mismatches"
+    },
+    {
+      "check": "Oracle: 'days_inactive' agrees for all customers",
+      "result": "PASS",
+      "detail": "0 mismatches"
+    },
+    {
+      "check": "Oracle: 'data_confidence' agrees for all customers",
+      "result": "PASS",
+      "detail": "0 mismatches"
+    },
+    {
+      "check": "Oracle: 'priority_band' agrees for all customers",
+      "result": "PASS",
+      "detail": "0 mismatches"
+    },
+    {
+      "check": "Oracle: 'tickets_total' agrees for all customers",
+      "result": "PASS",
+      "detail": "0 mismatches"
+    },
+    {
+      "check": "Oracle: 'tickets_unresolved' agrees for all customers",
+      "result": "PASS",
+      "detail": "0 mismatches"
+    },
+    {
+      "check": "Oracle: priority_score agrees within 0.05",
+      "result": "PASS",
+      "detail": "max abs diff 0.000"
+    },
+    {
+      "check": "False positives vs rule oracle = 0",
+      "result": "PASS",
+      "detail": "engine flagged, oracle did not: 0"
+    },
+    {
+      "check": "False negatives vs rule oracle = 0",
+      "result": "PASS",
+      "detail": "oracle flagged, engine did not: 0"
+    },
+    {
+      "check": "Reconcile: stage matches Phase 2 furthest_stage_asof for every user",
+      "result": "PASS",
+      "detail": "0 differences"
+    },
+    {
+      "check": "Reconcile: 3,536 customers have traded (Phase 3 funnel)",
+      "result": "PASS",
+      "detail": "engine 3536"
+    },
+    {
+      "check": "Backtest: no eventual completer would have been flagged early at the chosen window",
+      "result": "PASS",
+      "detail": "KYC 0.0%; Bank 0.0%; Deposit 0.0%; Trade 0.0%"
+    },
+    {
+      "check": "Disclosure: in this synthetic data the p95 window equals the maximum observed lag (0% early-flag rate holds BY CONSTRUCTION)",
+      "result": "PASS",
+      "detail": "completion lags are bounded in the generator, so this is not evidence of real-world accuracy; on real data p95 would leave ~5% of eventual completers flagged early"
+    },
+    {
+      "check": "Score: flagged scores within 0-100",
+      "result": "PASS",
+      "detail": "min 10.7, max 85.0"
+    },
+    {
+      "check": "Score: non-flagged have score 0 and band NOT_FLAGGED",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Score: components add up to the score",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Score: labelled as a heuristic, not a probability",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Score: component caps respected",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Reconcile: REPEATED_SUPPORT_ISSUES = users with >= 3 tickets (Phase 4 rule)",
+      "result": "PASS",
+      "detail": "phase4 450, engine 450"
+    },
+    {
+      "check": "Determinism: two runs give identical results",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Robustness: engine runs on dirty input without error",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Robustness: duplicates removed (25 injected, 3 originals had their ID blanked -> 22 expected)",
+      "result": "PASS",
+      "detail": "dropped 22 duplicate users, 15 duplicate tickets"
+    },
+    {
+      "check": "Robustness: missing IDs and registration dates dropped, counted not hidden",
+      "result": "PASS",
+      "detail": "{\"rows_missing_user_id_dropped\": 3, \"rows_missing_registration_date_dropped\": 2}"
+    },
+    {
+      "check": "Robustness: missing city filled 'Unknown'",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Robustness: invalid date treated as not completed (reported)",
+      "result": "PASS",
+      "detail": "5 unparseable KYC dates"
+    },
+    {
+      "check": "Robustness: no NaN in key output columns",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Robustness: original source data unchanged by the test (fresh read has same row count)",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Disclosure: LOW-confidence customers are reported, not hidden",
+      "result": "PASS",
+      "detail": "4,550 of 6,887 flagged (66%)"
+    }
+  ],
+  "backtest": [
+    {
+      "window_rule": "p50",
+      "KYC_window_days": 6,
+      "KYC_premature_pct": 44.1,
+      "Bank_window_days": 4,
+      "Bank_premature_pct": 42.4,
+      "Deposit_window_days": 7,
+      "Deposit_premature_pct": 47.4,
+      "Trade_window_days": 6,
+      "Trade_premature_pct": 44.9
+    },
+    {
+      "window_rule": "p75",
+      "KYC_window_days": 9,
+      "KYC_premature_pct": 17.4,
+      "Bank_window_days": 6,
+      "Bank_premature_pct": 14.2,
+      "Deposit_window_days": 11,
+      "Deposit_premature_pct": 20.0,
+      "Trade_window_days": 9,
+      "Trade_premature_pct": 17.5
+    },
+    {
+      "window_rule": "p90",
+      "KYC_window_days": 10,
+      "KYC_premature_pct": 8.3,
+      "Bank_window_days": 7,
+      "Bank_premature_pct": 0.0,
+      "Deposit_window_days": 13,
+      "Deposit_premature_pct": 6.8,
+      "Trade_window_days": 10,
+      "Trade_premature_pct": 8.6
+    },
+    {
+      "window_rule": "p95 (used)",
+      "KYC_window_days": 11,
+      "KYC_premature_pct": 0.0,
+      "Bank_window_days": 7,
+      "Bank_premature_pct": 0.0,
+      "Deposit_window_days": 14,
+      "Deposit_premature_pct": 0.0,
+      "Trade_window_days": 11,
+      "Trade_premature_pct": 0.0
+    },
+    {
+      "window_rule": "max",
+      "KYC_window_days": 11,
+      "KYC_premature_pct": 0.0,
+      "Bank_window_days": 7,
+      "Bank_premature_pct": 0.0,
+      "Deposit_window_days": 14,
+      "Deposit_premature_pct": 0.0,
+      "Trade_window_days": 11,
+      "Trade_premature_pct": 0.0
+    }
+  ]
+}

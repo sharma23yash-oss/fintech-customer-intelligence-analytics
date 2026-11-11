@@ -1,0 +1,59 @@
+relationship rel_FactCustomer_CampaignKey_DimCampaign
+	fromColumn: FactCustomer.CampaignKey
+	toColumn: DimCampaign.CampaignKey
+
+relationship rel_FactCustomer_CityKey_DimCity
+	fromColumn: FactCustomer.CityKey
+	toColumn: DimCity.CityKey
+
+relationship rel_FactCustomer_DeviceKey_DimDevice
+	fromColumn: FactCustomer.DeviceKey
+	toColumn: DimDevice.DeviceKey
+
+relationship rel_FactCustomer_SegmentKey_DimSegment
+	fromColumn: FactCustomer.SegmentKey
+	toColumn: DimSegment.SegmentKey
+
+relationship rel_FactActivity_CampaignKey_DimCampaign
+	fromColumn: FactActivity.CampaignKey
+	toColumn: DimCampaign.CampaignKey
+
+relationship rel_FactActivity_CityKey_DimCity
+	fromColumn: FactActivity.CityKey
+	toColumn: DimCity.CityKey
+
+relationship rel_FactActivity_DeviceKey_DimDevice
+	fromColumn: FactActivity.DeviceKey
+	toColumn: DimDevice.DeviceKey
+
+relationship rel_FactActivity_SegmentKey_DimSegment
+	fromColumn: FactActivity.SegmentKey
+	toColumn: DimSegment.SegmentKey
+
+relationship rel_FactTicket_CampaignKey_DimCampaign
+	fromColumn: FactTicket.CampaignKey
+	toColumn: DimCampaign.CampaignKey
+
+relationship rel_FactTicket_CityKey_DimCity
+	fromColumn: FactTicket.CityKey
+	toColumn: DimCity.CityKey
+
+relationship rel_FactTicket_DeviceKey_DimDevice
+	fromColumn: FactTicket.DeviceKey
+	toColumn: DimDevice.DeviceKey
+
+relationship rel_FactTicket_SegmentKey_DimSegment
+	fromColumn: FactTicket.SegmentKey
+	toColumn: DimSegment.SegmentKey
+
+relationship rel_FactCustomer_RegistrationDate_DimDate
+	fromColumn: FactCustomer.RegistrationDate
+	toColumn: DimDate.Date
+
+relationship rel_FactActivity_ActivityMonthDate_DimDate
+	fromColumn: FactActivity.ActivityMonthDate
+	toColumn: DimDate.Date
+
+relationship rel_FactTicket_CreatedDate_DimDate
+	fromColumn: FactTicket.CreatedDate
+	toColumn: DimDate.Date

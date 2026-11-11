@@ -1,0 +1,11 @@
+CampaignKey,CampaignName,Channel,ChannelSort,SourcePlatform,ChannelGroup,AcquisitionType,IsPaid,CampaignSpendINR,SpendBasis,Phase3Tier,Phase3OverallScore,Phase3FirstTradeP_Holm,Phase3SignificantAt5pct
+CMP01,Brand Search,Paid Search,1,Google,Paid Media,Paid (spend recorded),1,420000,recorded_spend,B - maintain & optimise,40.67,0.171791,No
+CMP02,Generic Search,Paid Search,1,Google,Paid Media,Paid (spend recorded),1,610000,recorded_spend,B - maintain & optimise,54.17,0.601864,No
+CMP03,Education Social,Paid Social,2,Instagram,Paid Media,Paid (spend recorded),1,380000,recorded_spend,B - maintain & optimise,45.44,0.0,Yes
+CMP04,Video Awareness,Paid Social,2,YouTube,Paid Media,Paid (spend recorded),1,450000,recorded_spend,C - fix or cut back,9.13,2e-06,Yes
+CMP05,Customer Referral,Referral,3,In-app,Owned & Lifecycle,Paid (spend recorded),1,240000,recorded_spend,A - scale / protect,95.04,0.0,Yes
+CMP06,Finance Affiliate,Affiliate,4,Publisher network,Partner & Affiliate,Paid (spend recorded),1,310000,recorded_spend,C - fix or cut back,20.24,0.060682,No
+CMP07,Organic Search,Organic,7,Search engines,Organic,Organic (no spend recorded),0,0,no_recorded_spend,Organic - quality only,,0.0,Yes
+CMP08,Organic Social,Organic,7,Social platforms,Organic,Organic (no spend recorded),0,0,no_recorded_spend,Organic - quality only,,0.0,Yes
+CMP09,Campus Events,Partnerships,5,Events,Partner & Affiliate,Paid (spend recorded),1,190000,recorded_spend,C - fix or cut back,30.56,0.004045,Yes
+CMP10,Email Nurture,CRM,6,Email,Owned & Lifecycle,Paid (spend recorded),1,90000,recorded_spend,B - maintain & optimise,71.43,0.16604,No

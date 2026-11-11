@@ -1,0 +1,5 @@
+pending_age_bucket,kyc_pending_users,users_with_kyc_ticket,pct_with_kyc_ticket
+0-11 d (in-flight),210,36,17.1
+12-30 d,144,21,14.6
+31-90 d,488,86,17.6
+>90 d,2199,466,21.2

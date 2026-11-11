@@ -1,0 +1,4 @@
+device_type,days_reg_to_kyc,days_kyc_to_bank,days_bank_to_deposit,days_deposit_to_trade
+Android,6.0,4.0,7.0,6.0
+Web,6.0,4.0,7.0,6.0
+iOS,6.0,4.0,7.5,6.0

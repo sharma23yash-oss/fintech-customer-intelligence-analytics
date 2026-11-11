@@ -1,0 +1,19 @@
+# Core analytics pipeline: cleaning, SQL build, Phase 3 analysis, Python pipeline, verification, notebooks.
+# Verified on Python 3.13 with two combinations: (a) pandas 3.0 / numpy 2.5 / scipy 1.18 / scikit-learn 1.9 / matplotlib 3.11
+# and (b) pandas 2.2.3 / numpy 2.2.6 / scipy 1.15.3 / scikit-learn 1.6.1 / matplotlib 3.10.3. Both reproduce the headline outputs.
+pandas>=2.2
+numpy>=2.0
+scipy>=1.15
+scikit-learn>=1.6
+matplotlib>=3.10
+openpyxl>=3.1.5
+tabulate>=0.9        # pandas DataFrame.to_markdown() in the KPI report
+
+# Re-executing the notebooks (05_python/pipeline/build_notebooks.py)
+nbformat>=5.10
+nbconvert>=7.16
+ipykernel>=6.29
+
+# Not needed to run the analysis. Only for rebuilding the Word/PDF/Excel deliverables (archival builders):
+#   reportlab, Pillow, Node.js + the `docx` npm package, LibreOffice (see 03_business_analytics/excel_and_report_builders/)
+# The AI Friction Detector has its own requirements: 08_ai_friction_detector/requirements.txt

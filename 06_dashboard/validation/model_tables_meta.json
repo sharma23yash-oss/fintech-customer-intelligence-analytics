@@ -1,0 +1,146 @@
+{
+ "DimCampaign": {
+  "rows": 10,
+  "columns": {
+   "CampaignKey": "text",
+   "CampaignName": "text",
+   "Channel": "text",
+   "ChannelSort": "int",
+   "SourcePlatform": "text",
+   "ChannelGroup": "text",
+   "AcquisitionType": "text",
+   "IsPaid": "int",
+   "CampaignSpendINR": "int",
+   "SpendBasis": "text",
+   "Phase3Tier": "text",
+   "Phase3OverallScore": "number",
+   "Phase3FirstTradeP_Holm": "number",
+   "Phase3SignificantAt5pct": "text"
+  }
+ },
+ "DimCity": {
+  "rows": 11,
+  "columns": {
+   "CityKey": "text",
+   "CitySort": "int"
+  }
+ },
+ "DimDevice": {
+  "rows": 3,
+  "columns": {
+   "DeviceKey": "text",
+   "DeviceSort": "int"
+  }
+ },
+ "DimSegment": {
+  "rows": 10,
+  "columns": {
+   "SegmentKey": "int",
+   "SegmentName": "text",
+   "SegmentGroup": "text",
+   "RecommendedAction": "text"
+  }
+ },
+ "DimStage": {
+  "rows": 6,
+  "columns": {
+   "StageOrder": "int",
+   "StageName": "text"
+  }
+ },
+ "FactCustomer": {
+  "rows": 10000,
+  "columns": {
+   "CustomerID": "text",
+   "RegistrationDate": "date",
+   "CampaignKey": "text",
+   "CityKey": "text",
+   "DeviceKey": "text",
+   "SegmentKey": "int",
+   "AgeGroup": "text",
+   "RiskProfile": "text",
+   "FurthestStage": "text",
+   "KYCDone": "int",
+   "BankLinked": "int",
+   "Deposited": "int",
+   "Traded": "int",
+   "KYCDate": "date",
+   "BankDate": "date",
+   "DepositDate": "date",
+   "FirstTradeDate": "date",
+   "FirstDepositAmountINR": "number",
+   "FunnelMature": "int",
+   "Eligible30d": "int",
+   "Eligible90d": "int",
+   "DaysRegToKYC": "int",
+   "DaysKYCToBank": "int",
+   "DaysBankToDeposit": "int",
+   "DaysDepositToTrade": "int",
+   "DaysRegToTrade": "int",
+   "Active30d": "int",
+   "Inactive90d": "int",
+   "TenureDays": "int",
+   "MonthsObserved": "int",
+   "TradeMonths": "int",
+   "TradeMonths6m": "int",
+   "TradingValue6mINR": "number",
+   "Dormant3m": "int",
+   "M1Retained": "int",
+   "M3Retained": "int",
+   "M6Retained": "int",
+   "TicketCount": "int",
+   "UnresolvedTicketCount": "int",
+   "DaysSinceLastActivity": "int",
+   "InactivityBucket": "text",
+   "InactivitySort": "int"
+  }
+ },
+ "FactActivity": {
+  "rows": 64645,
+  "columns": {
+   "CustomerID": "text",
+   "ActivityMonthDate": "date",
+   "RegMonthDate": "date",
+   "MonthsSinceRegistration": "int",
+   "CampaignKey": "text",
+   "CityKey": "text",
+   "DeviceKey": "text",
+   "SegmentKey": "int",
+   "ActiveInMonth": "int",
+   "TradedInMonth": "int",
+   "DepositedInMonth": "int",
+   "WithdrewInMonth": "int",
+   "TradeCount": "int",
+   "TradingValueINR": "number",
+   "DepositValueINR": "number",
+   "WithdrawalValueINR": "number",
+   "NetFlowINR": "number"
+  }
+ },
+ "FactTicket": {
+  "rows": 7614,
+  "columns": {
+   "TicketID": "text",
+   "CustomerID": "text",
+   "CreatedDate": "date",
+   "CampaignKey": "text",
+   "CityKey": "text",
+   "DeviceKey": "text",
+   "SegmentKey": "int",
+   "Category": "text",
+   "Priority": "text",
+   "PrioritySort": "int",
+   "Status": "text",
+   "ResolutionHours": "number",
+   "CSAT": "int",
+   "IsResolved": "int",
+   "IsUnresolved": "int",
+   "IsEscalated": "int",
+   "TicketAgeDays": "int",
+   "BacklogAgeBucket": "text",
+   "BacklogSort": "int",
+   "RelatedFunnelStage": "text",
+   "StagePendingAtTicket": "int"
+  }
+ }
+}

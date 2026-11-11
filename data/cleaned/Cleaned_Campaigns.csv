@@ -1,0 +1,11 @@
+campaign_id,campaign_name,channel,source_platform,campaign_spend_inr,channel_group,is_paid,spend_basis
+CMP01,Brand Search,Paid Search,Google,420000,Paid Media,1,recorded_spend
+CMP02,Generic Search,Paid Search,Google,610000,Paid Media,1,recorded_spend
+CMP03,Education Social,Paid Social,Instagram,380000,Paid Media,1,recorded_spend
+CMP04,Video Awareness,Paid Social,YouTube,450000,Paid Media,1,recorded_spend
+CMP05,Customer Referral,Referral,In-app,240000,Owned & Lifecycle,1,recorded_spend
+CMP06,Finance Affiliate,Affiliate,Publisher network,310000,Partner & Affiliate,1,recorded_spend
+CMP07,Organic Search,Organic,Search engines,0,Organic,0,no_recorded_spend
+CMP08,Organic Social,Organic,Social platforms,0,Organic,0,no_recorded_spend
+CMP09,Campus Events,Partnerships,Events,190000,Partner & Affiliate,1,recorded_spend
+CMP10,Email Nurture,CRM,Email,90000,Owned & Lifecycle,1,recorded_spend

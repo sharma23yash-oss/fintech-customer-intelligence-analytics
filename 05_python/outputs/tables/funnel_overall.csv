@@ -1,0 +1,7 @@
+,reached,pct_of_registered,step_conversion_pct,users_lost,share_of_all_losses_pct,conv_ci_low_pct,conv_ci_high_pct
+Registered,9116,100.0,,,,,
+KYC Completed,6429,70.52,70.52,2687.0,42.6,69.58,71.45
+Bank Linked,5645,61.92,87.81,784.0,12.43,86.98,88.58
+First Deposit,4340,47.61,76.88,1305.0,20.69,75.76,77.96
+First Trade,3462,37.98,79.77,878.0,13.92,78.55,80.94
+Active (30d),2808,30.8,81.11,654.0,10.37,79.77,82.38

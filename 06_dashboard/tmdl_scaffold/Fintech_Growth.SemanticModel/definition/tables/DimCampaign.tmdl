@@ -1,0 +1,83 @@
+table DimCampaign
+
+	column CampaignKey
+		dataType: string
+		summarizeBy: none
+		sourceColumn: CampaignKey
+
+	column CampaignName
+		dataType: string
+		summarizeBy: none
+		sourceColumn: CampaignName
+
+	column Channel
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Channel
+		sortByColumn: ChannelSort
+
+	column ChannelSort
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: ChannelSort
+
+	column SourcePlatform
+		dataType: string
+		summarizeBy: none
+		sourceColumn: SourcePlatform
+
+	column ChannelGroup
+		dataType: string
+		summarizeBy: none
+		sourceColumn: ChannelGroup
+
+	column AcquisitionType
+		dataType: string
+		summarizeBy: none
+		sourceColumn: AcquisitionType
+
+	column IsPaid
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: IsPaid
+
+	column CampaignSpendINR
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: CampaignSpendINR
+
+	column SpendBasis
+		dataType: string
+		summarizeBy: none
+		sourceColumn: SpendBasis
+
+	column Phase3Tier
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Phase3Tier
+
+	column Phase3OverallScore
+		dataType: double
+		summarizeBy: none
+		sourceColumn: Phase3OverallScore
+
+	column Phase3FirstTradeP_Holm
+		dataType: double
+		summarizeBy: none
+		sourceColumn: Phase3FirstTradeP_Holm
+
+	column Phase3SignificantAt5pct
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Phase3SignificantAt5pct
+
+	partition DimCampaign = m
+		mode: import
+		source =
+				let
+				    Source   = Csv.Document(File.Contents(DataFolder & "\DimCampaign.csv"), [Delimiter = ",", Columns = 14, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed    = Table.TransformColumnTypes(Promoted, {{"CampaignKey", type text}, {"CampaignName", type text}, {"Channel", type text}, {"ChannelSort", Int64.Type}, {"SourcePlatform", type text}, {"ChannelGroup", type text}, {"AcquisitionType", type text}, {"IsPaid", Int64.Type}, {"CampaignSpendINR", Int64.Type}, {"SpendBasis", type text}, {"Phase3Tier", type text}, {"Phase3OverallScore", type number}, {"Phase3FirstTradeP_Holm", type number}, {"Phase3SignificantAt5pct", type text}}, "en-US")
+				in
+				    Typed

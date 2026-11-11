@@ -1,0 +1,12 @@
+missing_item,status_in_synthetic_data,consequence_for_Phase6,owner_to_provide
+Revenue / brokerage fee per trade,Not in dataset,"Cannot state revenue, ARPU, ROI or payback; all value expressed as cost per activated customer",Finance
+Customer lifetime value (LTV) and margin,Not in dataset,"Cannot rank channels by profit; quality proxies used (first-trade rate, M3 retention)",Finance / Data Analytics
+Campaign spend by date,Spend is one total per campaign,"Cannot measure marginal CAC, diminishing returns or pacing; scenarios use average cost",Marketing
+Referral reward cost and referrer IDs,Reward cost not separated; referrer not recorded,Referral CAC (Rs 232) is recorded spend / registrations only; referral loop attribution is approximate,Marketing / Product
+"Organic channel cost (content, SEO)",Organic spend blank (not zero),Organic CAC undefined; organic cannot be compared on cost,Marketing
+Support cost per ticket and staffing,Not in dataset,Cannot cost ticket-deflection; benefit expressed as ticket volume only,Customer Support / Finance
+KYC vendor cost per check and rejection reasons,Not in dataset,Cannot cost assisted KYC; cannot split drop-off by rejection vs abandonment,Compliance / Operations
+Click and impression counts,Not in dataset,Cannot measure click-to-registration or landing-page conversion (needed for EXP-10),Marketing / Analytics
+In-app screen / event funnel,Only stage dates are recorded,Cannot see where inside a stage users abandon; tests must log step-level events,Product / Analytics
+Incentive / bonus costs,Not in dataset,Cannot cost win-back or referral incentives,Marketing / Finance
+Funnel flags vs activity log reconciliation,78-98% of stalled-segment users also show activity (source conflict),True size of the stalled-onboarding backlog is uncertain until reconciled,Data Analytics / Operations

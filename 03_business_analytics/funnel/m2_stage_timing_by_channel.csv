@@ -1,0 +1,8 @@
+acquisition_channel,days_reg_to_kyc,days_kyc_to_bank,days_bank_to_deposit,days_deposit_to_trade,days_reg_to_trade
+Affiliate,6.0,4.0,7.0,6.0,22.0
+CRM,6.0,4.0,7.0,6.0,23.5
+Organic,6.0,4.0,7.0,6.0,23.0
+Paid Search,6.0,4.0,7.0,6.0,23.0
+Paid Social,6.0,4.0,8.0,6.0,24.0
+Partnerships,6.0,4.0,7.0,6.0,23.0
+Referral,6.0,4.0,8.0,6.0,23.0

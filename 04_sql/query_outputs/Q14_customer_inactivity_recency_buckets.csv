@@ -1,0 +1,5 @@
+recency_bucket,users,share_pct,avg_trading_value_6m_inr
+1. Active (0-30 d),4923,54.0,23557.0
+2. Cooling (31-60 d),1752,19.2,9508.0
+3. At risk (61-90 d),1331,14.6,10046.0
+"4. Inactive (>90 d, bounded at 120)",1110,12.2,10989.0

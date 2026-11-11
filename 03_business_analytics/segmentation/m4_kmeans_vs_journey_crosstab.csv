@@ -1,0 +1,5 @@
+kmeans_segment,02 KYC-pending (stalled),03 Bank-link pending (stalled),04 Deposit-pending (stalled),"05 Deposited, never traded (stalled)",07 Repeat trader (2-3 trading months of last 6),08 High-engagement trader (>=4 trading months of last 6),09 Inactive trader (no activity Aug-Oct),10 Occasional trader (0-1 trading months of last 6)
+Engaged regulars,0,0,0,340,1402,896,311,167
+Lapsed (long inactive),349,101,182,116,0,0,39,0
+"Non-trading, partly onboarded",740,225,368,272,0,0,2,16
+Unfunded per funnel but trading in activity log (source conflict),1121,339,510,0,0,0,0,0

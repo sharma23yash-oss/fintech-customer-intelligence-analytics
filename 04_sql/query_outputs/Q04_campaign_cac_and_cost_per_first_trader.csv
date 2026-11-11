@@ -1,0 +1,11 @@
+campaign_id,campaign_name,channel,campaign_spend_inr,registered_users,cac_inr,first_trade_rate_mature_pct,cost_per_first_trader_inr
+CMP07,Organic Search,Organic,0,1174,,46.55,
+CMP08,Organic Social,Organic,0,704,,48.15,
+CMP05,Customer Referral,Referral,240000,1036,231.7,52.89,438.0
+CMP10,Email Nurture,CRM,90000,561,160.4,33.98,472.0
+CMP03,Education Social,Paid Social,380000,1376,276.2,29.99,921.0
+CMP02,Generic Search,Paid Search,610000,1553,392.8,37.36,1051.0
+CMP09,Campus Events,Partnerships,190000,580,327.6,31.14,1052.0
+CMP01,Brand Search,Paid Search,420000,1091,385.0,35.47,1085.0
+CMP06,Finance Affiliate,Affiliate,310000,757,409.5,33.67,1216.0
+CMP04,Video Awareness,Paid Social,450000,1168,385.3,30.78,1252.0

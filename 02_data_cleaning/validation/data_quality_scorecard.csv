@@ -1,0 +1,11 @@
+Dimension,Checks,Tested,Viol_raw,Pass_raw,Weakest_raw,Viol_after,Pass_after,Weakest_after,Status
+Uniqueness,6,342269,0,1.0,1.0,0,1.0,1.0,Pass
+Referential integrity,7,102299,0,1.0,1.0,0,1.0,1.0,Pass
+Completeness,8,594904,0,1.0,1.0,0,1.0,1.0,Pass
+Validity,7,457082,0,1.0,1.0,0,1.0,1.0,Pass
+Journey chronology,10,182623,0,1.0,1.0,0,1.0,1.0,Pass
+Timeliness,2,31903,1254,0.9606933517224086,0.9604620371638588,0,1.0,1.0,Corrected
+Cross-table consistency,11,174752,37142,0.7874587987548068,0.36639999999999995,36409,0.79165331441128,0.36639999999999995,"Corrected, Flagged (retained)"
+Reported-metric accuracy,1,17,3,0.8235294117647058,0.8235294117647058,0,1.0,1.0,Corrected
+Definition validity,2,16571,936,0.9435157805805322,0.8754371805219263,926,0.9441192444632189,0.8754371805219263,"Corrected, Documented"
+Reconciliation,2,164,0,1.0,1.0,0,1.0,1.0,Pass

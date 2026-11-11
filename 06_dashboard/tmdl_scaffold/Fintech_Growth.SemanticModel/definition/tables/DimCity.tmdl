@@ -1,0 +1,23 @@
+table DimCity
+
+	column CityKey
+		dataType: string
+		summarizeBy: none
+		sourceColumn: CityKey
+		sortByColumn: CitySort
+
+	column CitySort
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: CitySort
+
+	partition DimCity = m
+		mode: import
+		source =
+				let
+				    Source   = Csv.Document(File.Contents(DataFolder & "\DimCity.csv"), [Delimiter = ",", Columns = 2, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed    = Table.TransformColumnTypes(Promoted, {{"CityKey", type text}, {"CitySort", Int64.Type}}, "en-US")
+				in
+				    Typed

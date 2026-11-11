@@ -1,0 +1,7 @@
+StageOrder,StageName
+1,Registered
+2,KYC Completed
+3,Bank Linked
+4,First Deposit
+5,First Trade
+6,Active (30d)

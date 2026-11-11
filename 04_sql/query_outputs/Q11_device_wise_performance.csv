@@ -1,0 +1,4 @@
+device_type,registrations,share_pct,kyc_pct,first_trade_pct,m3_retention_pct,tickets_per_1000_users
+Android,6020,60.2,69.7,37.6,55.3,770.0
+iOS,2746,27.5,73.2,39.7,56.4,757.0
+Web,1234,12.3,68.7,35.9,58.6,728.0

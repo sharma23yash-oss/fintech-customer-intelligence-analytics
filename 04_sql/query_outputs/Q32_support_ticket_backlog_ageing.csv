@@ -1,0 +1,13 @@
+backlog_age_bucket,priority,open_tickets,escalated_tickets,unresolved_total
+0-30d,High,46,22,68
+0-30d,Medium,112,73,185
+0-30d,Low,94,52,146
+31-90d,High,37,21,58
+31-90d,Medium,133,73,206
+31-90d,Low,98,47,145
+91-180d,High,42,25,67
+91-180d,Medium,117,59,176
+91-180d,Low,75,37,112
+>180d,High,17,11,28
+>180d,Medium,71,35,106
+>180d,Low,50,24,74

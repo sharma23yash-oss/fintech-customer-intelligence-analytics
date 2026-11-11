@@ -1,0 +1,15 @@
+check,phase6_value,source_value,ok
+Registered users,10000.0,10000.0,True
+Mature users,9116.0,9116.0,True
+Mature KYC rate,0.7052435278630979,0.7052,True
+Mature first-trade rate,0.3797718297498903,0.3798,True
+Paid spend total,2690000.0,2690000.0,True
+Blended paid CAC,331.19921201674464,331.2,True
+Referral first-trade rate,0.5289079229122056,0.529,True
+Organic first-trade rate,0.4715447154471545,0.472,True
+CMP05 cost per first trade,437.9973,438.0,True
+CMP04 cost per first trade,1251.844,1252.0,True
+Baseline paid first traders (P3),2913.417481879628,2913.417481879628,True
+S2 net change @+0% (P3 264.55),264.55158341551794,264.5516,True
+S2 break-even penalty (P3 +172%),172.24656732573632,172.2466,True
+Experiments reconciled to Phase 3 n_per_arm,10.0,10.0,True

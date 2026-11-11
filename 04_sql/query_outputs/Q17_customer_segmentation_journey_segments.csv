@@ -1,0 +1,11 @@
+journey_segment,users,share_pct,avg_tenure_days,avg_trading_value_6m_inr,tickets_per_user
+01 New / in-flight onboarding,601,6.0,11.0,6351.0,0.6
+02 KYC-pending (stalled),2831,28.3,187.0,4409.0,1.0
+03 Bank-link pending (stalled),818,8.2,195.0,4132.0,0.83
+04 Deposit-pending (stalled),1333,13.3,195.0,4491.0,0.78
+"05 Deposited, never traded (stalled)",881,8.8,197.0,3909.0,0.72
+06 First-time trader (<=30d since first trade),317,3.2,39.0,17074.0,0.59
+07 Repeat trader (2-3 trading months of last 6),1684,16.8,201.0,36730.0,0.58
+08 High-engagement trader (>=4 trading months of last 6),896,9.0,210.0,61160.0,0.6
+09 Inactive trader (no activity Aug-Oct),352,3.5,269.0,21908.0,0.59
+10 Occasional trader (0-1 trading months of last 6),287,2.9,184.0,13701.0,0.63

@@ -1,0 +1,14 @@
+metric,definition,eligible_users,supplied_value,recalculated_value,note
+Users not yet eligible for 30-day measurement,tenure < 31 days,884,,884.0,Supplied sheets treat tenure<30 as ineligible; 21 boundary users (tenure=30) were inconsistent
+30-day active rate,days since last activity <= 30,9116,0.5275,0.54,Recalculated after lifting last_active_date to the latest funnel event
+30-day inactivity proxy rate,days since last activity > 30,9116,0.4714,0.46,Proxy only - not churn
+"30-day inactivity proxy rate (supplied flag, all users)","churned_30d_proxy over 10,000",10000,0.4307,0.46,Supplied rate on all users mixes in users too new to be inactive
+Users not yet eligible for 90-day measurement,tenure < 91 days,2534,,2534.0,Registered on/after 2026-08-01
+90-day inactivity proxy rate,days since last activity > 90,7466,0.1515,0.1487,TRUNCATED: max observable inactivity is 120 days; true long-run inactivity is higher
+Maximum days inactive observed,max(days_inactive_as_of_snapshot),10000,,120.0,No user is inactive longer than 120 days even though Nov-2025 cohorts have 12 months of history: the 90-day proxy is bounded
+3-month dormancy (monthly source),no active month in Aug-Oct 2026,7434,,0.2195,Event-based; registered <= Jul-2026
+Agreement: 90-day proxy vs 3-month dormancy,share of users where both agree (users eligible for both),7434,,0.7046,Low agreement = the two sources describe different things
+M1 retention (monthly source),active in calendar month 1 after registration month,9116,,0.6758,Month 0 is a partial month
+M3 retention (monthly source),active in calendar month 3 after registration month,7434,,0.5601,Month 0 is a partial month
+M6 retention (monthly source),active in calendar month 6 after registration month,4955,,0.4071,Month 0 is a partial month
+Users never active in any monthly row,no active_in_month=True,337,,337.0,Not necessarily churn - never engaged

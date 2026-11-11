@@ -1,0 +1,51 @@
+user_id,acquisition_channel,city,device_type,first_deposit_inr,deposit_date_asof,days_since_deposit
+U109928,Organic,Chennai,iOS,124786.48,2026-04-06,208
+U101109,Paid Search,Hyderabad,Android,100836.45,2026-07-14,109
+U100884,Paid Search,Chennai,Android,74533.53,2026-10-26,5
+U102368,Organic,Kolkata,iOS,61300.11,2026-10-26,5
+U109855,Paid Social,Other,Web,49544.17,2026-08-22,70
+U105477,Paid Search,Bengaluru,Web,46968.4,2025-12-13,322
+U108468,CRM,Jaipur,Android,46743.92,2026-05-21,163
+U108665,Paid Social,Ahmedabad,iOS,46330.0,2026-09-13,48
+U106410,Affiliate,Kolkata,Android,42182.14,2026-02-09,264
+U102900,Partnerships,Delhi NCR,iOS,42000.16,2026-05-23,161
+U102608,Paid Search,Jaipur,Android,41079.19,2026-10-27,4
+U105640,Organic,Chennai,Android,37390.98,2026-02-22,251
+U105636,Paid Social,Bhopal,iOS,37327.82,2026-10-05,26
+U101349,Referral,Bhopal,iOS,36346.32,2026-01-26,278
+U109121,CRM,Jaipur,Android,35924.86,2026-10-30,1
+U100800,Paid Search,Hyderabad,iOS,35116.01,2026-04-29,185
+U101163,Paid Search,Other,iOS,34620.84,2026-01-26,278
+U103641,Referral,Jaipur,Android,33716.83,2026-08-10,82
+U107342,Paid Search,Mumbai,Android,32153.73,2026-07-27,96
+U102437,Partnerships,Ahmedabad,Android,32039.76,2026-05-02,182
+U101198,Paid Search,Other,Web,31660.44,2026-05-18,166
+U102096,Paid Social,Kolkata,Web,31580.41,2026-08-24,68
+U105825,Paid Social,Pune,iOS,30596.64,2025-12-05,330
+U102757,Referral,Bengaluru,Android,30154.97,2026-02-05,268
+U102238,Partnerships,Pune,iOS,30043.26,2026-10-14,17
+U104472,Paid Social,Ahmedabad,iOS,29986.72,2026-04-30,184
+U109226,Referral,Chennai,Android,29223.68,2026-03-03,242
+U104128,Paid Social,Delhi NCR,iOS,28946.75,2026-10-06,25
+U108581,Paid Search,Jaipur,Android,28797.04,2026-03-21,224
+U107308,CRM,Bengaluru,iOS,28521.52,2026-08-31,61
+U103253,Paid Social,Jaipur,Android,28100.33,2025-11-30,335
+U105660,Paid Search,Bengaluru,Android,28034.6,2026-04-27,187
+U102777,Organic,Pune,Web,27952.59,2026-10-06,25
+U100264,Partnerships,Other,Web,27851.37,2026-08-03,89
+U104023,Organic,Delhi NCR,Android,27746.77,2026-10-28,3
+U101802,Paid Search,Delhi NCR,Android,27015.5,2026-06-01,152
+U102469,Paid Social,Bengaluru,Android,27006.1,2026-10-29,2
+U105057,CRM,Pune,iOS,26976.1,2025-12-04,331
+U102651,Organic,Mumbai,Android,26776.54,2026-09-15,46
+U102427,Paid Search,Kolkata,iOS,25823.16,2025-11-24,341
+U106240,Organic,Pune,iOS,25785.61,2026-07-28,95
+U103212,Paid Search,Hyderabad,Web,25770.88,2026-10-31,0
+U108448,Paid Social,Chennai,Android,25740.72,2025-12-03,332
+U101823,Organic,Chennai,iOS,25278.89,2025-12-11,324
+U107976,Paid Search,Jaipur,iOS,25109.87,2026-10-23,8
+U110000,Paid Social,Other,Android,25092.65,2026-02-10,263
+U104065,Paid Search,Other,Android,24901.69,2026-10-30,1
+U109496,Referral,Chennai,Android,24675.65,2026-01-15,289
+U108894,Organic,Chennai,Android,24594.63,2026-03-15,230
+U102176,Referral,Bengaluru,Android,24124.61,2026-02-01,272

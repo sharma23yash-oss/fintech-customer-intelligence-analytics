@@ -1,0 +1,175 @@
+== SHAPES
+START_HERE (8, 1)
+Analysis_Summary (12, 2)
+Funnel_Summary (7, 3)
+Campaigns (10, 13)
+Users_10000 (10000, 25)
+Monthly_Activity (64645, 8)
+Support_Tickets (7614, 9)
+Cohort_Retention (78, 5)
+Data_Dictionary (15, 4)
+KPI_Definitions (12, 3)
+csv (10000, 25)
+
+== CSV vs Excel Users sheet identical?
+cells differing: 0
+
+== DTYPES users
+user_id                                    str
+registration_date               datetime64[us]
+registration_month                         str
+acquisition_campaign_id                    str
+acquisition_channel                        str
+source_platform                            str
+city                                       str
+age_group                                  str
+device_type                                str
+risk_profile                               str
+kyc_completed                             bool
+kyc_completion_date             datetime64[us]
+bank_account_linked                       bool
+bank_link_date                  datetime64[us]
+first_deposit_made                        bool
+first_deposit_date              datetime64[us]
+first_deposit_amount_inr               float64
+first_trade_made                          bool
+first_trade_date                datetime64[us]
+first_trade_segment                        str
+active_30d                                bool
+last_active_date                datetime64[us]
+days_inactive_as_of_snapshot             int64
+churned_30d_proxy                         bool
+churned_90d_proxy                         bool
+
+== NULLS
+users {'kyc_completion_date': 2925, 'bank_link_date': 3774, 'first_deposit_date': 5214, 'first_trade_date': 6184, 'first_trade_segment': 6184}
+monthly {}
+tickets {'resolution_time_hours': 1371, 'csat_score': 1371}
+campaigns {}
+cohort {}
+
+== PK / dupes
+users dup user_id 0  full-row dup 0
+monthly dup (user,month) 0
+tickets dup ticket_id 0
+campaign dup 0
+
+== FK
+monthly users not in users 0  tickets users not in users 0
+users campaign not in campaigns 0
+users with no monthly rows 0
+
+== Categorical values
+acquisition_channel {'Paid Search': 2644, 'Paid Social': 2544, 'Organic': 1878, 'Referral': 1036, 'Affiliate': 757, 'Partnerships': 580, 'CRM': 561}
+source_platform {'Google': 2644, 'Instagram': 1376, 'Search engines': 1174, 'YouTube': 1168, 'In-app': 1036, 'Publisher network': 757, 'Social platforms': 704, 'Events': 580, 'Email': 561}
+city {'Chennai': 943, 'Pune': 929, 'Other': 923, 'Jaipur': 920, 'Delhi NCR': 918, 'Bengaluru': 912, 'Ahmedabad': 912, 'Hyderabad': 900, 'Kolkata': 882, 'Bhopal': 881, 'Mumbai': 880}
+age_group {'25-34': 3680, '35-44': 2397, '18-24': 1798, '45-54': 1414, '55+': 711}
+device_type {'Android': 6020, 'iOS': 2746, 'Web': 1234}
+risk_profile {'Moderate': 5138, 'Conservative': 2788, 'Aggressive': 2074}
+first_trade_segment {nan: 6184, 'Equity': 2167, 'Mutual Funds': 816, 'ETF': 615, 'Derivatives': 218}
+category {'KYC & verification': 1727, 'Trading & orders': 1313, 'Bank linking': 1246, 'Deposits & withdrawals': 1198, 'App navigation': 892, 'Account access': 732, 'Fees & charges': 506}
+priority {'Medium': 3789, 'Low': 2654, 'High': 1171}
+status {'Resolved': 6243, 'Open': 892, 'Escalated': 479}
+
+== Channel<->campaign mapping consistency
+{'acquisition_channel': 1, 'source_platform': 1}
+channel mismatch users vs campaigns 0  platform mismatch 0
+
+== Date ranges
+registration_date 2025-11-01 00:00:00 2026-10-31 00:00:00 nulls 0
+kyc_completion_date 2025-11-02 00:00:00 2026-11-11 00:00:00 nulls 2925
+bank_link_date 2025-11-05 00:00:00 2026-11-16 00:00:00 nulls 3774
+first_deposit_date 2025-11-07 00:00:00 2026-11-30 00:00:00 nulls 5214
+first_trade_date 2025-11-15 00:00:00 2026-12-08 00:00:00 nulls 6184
+last_active_date 2026-07-03 00:00:00 2026-10-31 00:00:00 nulls 0
+monthly range 2025-11 2026-10  ticket range 2025-11-06 00:00:00 2026-10-31 00:00:00
+registration_month matches date 0 mismatches
+future dates >snapshot registration_date 0
+future dates >snapshot kyc_completion_date 116
+future dates >snapshot bank_link_date 196
+future dates >snapshot first_deposit_date 274
+future dates >snapshot first_trade_date 280
+future dates >snapshot last_active_date 0
+
+== FLAG vs DATE consistency
+kyc_completed True but date null 0  False but date present 0
+bank_account_linked True but date null 0  False but date present 0
+first_deposit_made True but date null 0  False but date present 0
+first_trade_made True but date null 0  False but date present 0
+
+== FUNNEL LOGIC (stage order & skipping)
+bank linked without KYC 0
+deposit without bank link 0  deposit without KYC 0
+trade without deposit 0  trade without bank 0
+KYC<reg 0  bank<KYC 0  deposit<bank 0  trade<deposit 0  trade<reg 0
+deposit amt>0 w/o deposit 0  deposit w/ amt<=0 0
+deposit amt describe {'count': 4786.0, 'mean': 9253.7, 'std': 9558.0, 'min': 500.0, '25%': 3624.1, '50%': 6519.4, '75%': 11352.2, 'max': 135951.2}
+trade segment null while trade made 0  segment present w/o trade 0
+
+== ACTIVITY / CHURN LOGIC
+last_active < registration 0  last_active < first_trade_date 543  last_active<first_deposit 627  last_active < kyc 483
+days_inactive recompute mismatch 0
+churn30 vs days>30 mismatch 0  churn90 vs days>90 mismatch 0
+churn90 True but churn30 False 0
+active_30d + churned_30d both True 0  both False 873
+active_30d vs days<=30 mismatch 873
+churn30 rate over ALL users 0.4307  churn90 rate 0.1131
+churn rate among users reg<30d before snapshot 0.0
+n users registered in last 30d 863  last 90d 2504
+days_inactive vs days since registration: users with inactivity > tenure 0
+
+== SUMMARY SHEET RECONCILIATION
+KYC 7075 bank 6226 dep 4786 trade 3816
+active_30d sum 4820  churned_30d sum 4307  churned_90 sum 1131
+Funnel_Summary says active 4820 and churn 6758 (eligible) -> active+churn 11578 (must equal eligible N)
+Analysis_Summary active rate .5275 vs actual active_30d mean 0.482
+
+== CAMPAIGN SHEET RECONCILIATION
+             acquired_users  kyc_completions  first_traders  campaign_spend_inr  users   kyc   ft  d_users  d_kyc  d_ft
+campaign_id                                                                                                            
+CMP01                  1091              769            393              420000   1091   769  393        0      0     0
+CMP02                  1553             1141            588              610000   1553  1141  588        0      0     0
+CMP03                  1376              919            419              380000   1376   919  419        0      0     0
+CMP04                  1168              762            355              450000   1168   762  355        0      0     0
+CMP05                  1036              811            548              240000   1036   811  548        0      0     0
+CMP06                   757              510            257              310000    757   510  257        0      0     0
+CMP07                  1174              886            550                   0   1174   886  550        0      0     0
+CMP08                   704              522            338                   0    704   522  338        0      0     0
+CMP09                   580              371            178              190000    580   371  178        0      0     0
+CMP10                   561              384            190               90000    561   384  190        0      0     0
+total spend 2690000  paid-user CAC (spend>0): 331.2  blended all users: 269.0
+
+== MONTHLY ACTIVITY LOGIC
+months_since_registration mismatch 0
+rows before registration month 0  rows after Oct-2026 0
+expected monthly rows 64645 actual 64645
+trade_count>0 but not active_in_month 0  trading_value>0 & trade_count==0 0  trade_count>0 & value==0 0
+negative values {'trade_count': 0, 'trading_value_inr': 0, 'deposit_value_inr': 0, 'withdrawal_value_inr': 0}
+trades in months BEFORE the first_trade_date month 2242 of 19718
+trades by users with first_trade_made=False 5640
+deposit rows 5680  deposits in month before first_deposit month 361  deposit by users with no first deposit 2613
+withdrawal rows 3895  withdrawals by users w/o any deposit 1818  withdrawals in months before first deposit 256
+active rows after last_active_date month 3180 of 35067
+month-0 active rate 0.7603
+users active in final month (Oct-26) 4611  vs users active_30d 4820
+users with last_active in Oct-26 5693
+
+== SUPPORT TICKETS LOGIC
+ticket before registration 0
+created_month mismatch 0
+status x res_time/csat nulls
+              n  res_null  csat_null
+status                              
+Escalated   479       479        479
+Open        892       892        892
+Resolved   6243         0          0
+csat values {1.0: 251, 2.0: 505, 3.0: 1227, 4.0: 2352, 5.0: 1908, nan: 1371}  res time describe {'count': 6243.0, 'mean': 10.89, 'std': 7.15, 'min': 0.1, '25%': 5.6, '50%': 9.4, '75%': 14.5, 'max': 79.2}
+tickets per user max 7  users w/ ticket 5244
+tickets before 2025-11? min date 2025-11-06 00:00:00  tickets pre-2026 (users registered 2026-01+ cannot exist pre-Jan?)
+
+== COHORT SHEET vs recompute
+cohort rows 78 recomputed 78  mismatch users 0  mismatch active 0
+Cohort denominator caveat: cohort_users repeated per month; check month-0 cohort_users == signups 10000
+registrations by month {'2025-11': 827, '2025-12': 876, '2026-01': 812, '2026-02': 789, '2026-03': 822, '2026-04': 829, '2026-05': 842, '2026-06': 787, '2026-07': 850, '2026-08': 850, '2026-09': 832, '2026-10': 884}
+
+== ORGANIC vs PAID mix, CAMPAIGN spend monthly? spend only as lump-sum per campaign; no monthly spend -> no time-series CAC

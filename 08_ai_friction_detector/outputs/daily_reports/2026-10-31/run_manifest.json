@@ -1,0 +1,19 @@
+{
+  "run_date": "2026-10-31",
+  "previous_run_date": "2026-10-30",
+  "synthetic": true,
+  "llm_used": false,
+  "customers_analysed": 10000,
+  "customers_flagged": 6887,
+  "newly_flagged": 42,
+  "no_longer_flagged": 0,
+  "category_changed": 6,
+  "files": [
+    "exception_report.csv",
+    "newly_flagged.csv",
+    "summary_by_category.csv",
+    "daily_summary.md",
+    "by_category/*.csv"
+  ],
+  "safety": "Reports only. No customer messages were sent; no trades, deposits or withdrawals were initiated."
+}

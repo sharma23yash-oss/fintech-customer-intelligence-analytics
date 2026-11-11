@@ -1,0 +1,11 @@
+campaign_id,campaign_name,channel,campaign_spend_inr,registered_users,cac_inr,first_trade_rate_mature,cost_per_first_trade_at_maturity_inr,cost_per_kyc_at_maturity_inr,m3_retention,dormant_3m_rate,share_of_spend
+CMP01,Brand Search,Paid Search,420000,1091,384.9679,0.3547,1085.411,548.9977,0.547,0.2344,0.1561
+CMP02,Generic Search,Paid Search,610000,1553,392.7882,0.3736,1051.3951,536.861,0.5444,0.2336,0.2268
+CMP03,Education Social,Paid Social,380000,1376,276.1628,0.2999,920.7849,416.0502,0.5485,0.2402,0.1413
+CMP04,Video Awareness,Paid Social,450000,1168,385.274,0.3078,1251.844,587.0841,0.531,0.2598,0.1673
+CMP05,Customer Referral,Referral,240000,1036,231.6602,0.5289,437.9973,296.8047,0.612,0.1547,0.0892
+CMP06,Finance Affiliate,Affiliate,310000,757,409.5112,0.3367,1216.2308,604.2255,0.5435,0.2522,0.1152
+CMP07,Organic Search,Organic,0,1174,,0.4655,,,0.6138,0.1805,0.0
+CMP08,Organic Social,Organic,0,704,,0.4815,,,0.5864,0.1631,0.0
+CMP09,Campus Events,Partnerships,190000,580,327.5862,0.3114,1051.828,509.048,0.5077,0.2384,0.0706
+CMP10,Email Nurture,CRM,90000,561,160.4278,0.3398,472.0634,236.7119,0.5597,0.2201,0.0335

@@ -1,0 +1,18 @@
+{
+ "reg_per_week": 192.30769230769232,
+ "react_rate": 0.3468525559780313,
+ "react_n": 4734,
+ "dormant_pool": 1632,
+ "dormant_inflow_week": 112.61538461538463,
+ "pend7_share": 0.5428916191311979,
+ "pend7_complete": 0.4570620327338856,
+ "backlogs": {
+  "kyc": 2687,
+  "bank": 784,
+  "deposit": 1305,
+  "trade": 878
+ },
+ "ref_per_100_mau_month": 2.954344540451136,
+ "kyc_tickets_per_user": 0.1727,
+ "mau_mean": 2922.25
+}

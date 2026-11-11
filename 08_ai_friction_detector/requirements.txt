@@ -1,0 +1,11 @@
+# Brokerage Customer Friction Detector (SYNTHETIC data prototype)
+# Tested on Python 3.13 / pandas 3.0 / numpy 2.5 / streamlit 1.67 (Linux x86-64).
+# Ranges below are expected to work on macOS Apple Silicon (arm64 wheels exist for all of them).
+pandas>=2.2
+numpy>=1.26
+streamlit>=1.50
+altair>=5.0
+pytest>=8.0
+# Optional, only for regenerating screenshots:
+# playwright>=1.45
+# scikit-learn is intentionally NOT required: there are no ground-truth labels to train or validate a model on.

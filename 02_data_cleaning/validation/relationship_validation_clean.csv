@@ -1,0 +1,15 @@
+test,object,rows,violations
+primary key unique,Cleaned_Users.user_id,10000,0
+primary key unique,Cleaned_Campaigns.campaign_id,10,0
+primary key unique,Cleaned_Support_Tickets.ticket_id,7614,0
+primary key unique,Customer_Segments.user_id,10000,0
+primary key unique,Campaign_Performance.campaign_id,10,0
+primary key unique,"Cleaned_Monthly_Activity (user_id, activity_month)",64645,0
+primary key unique,"Customer_Cohorts (registration_month, channel, months_since_registration)",1008,0
+foreign key (no orphans),Cleaned_Monthly_Activity.user_id,64645,0
+foreign key (no orphans),Cleaned_Support_Tickets.user_id,7614,0
+foreign key (no orphans),Cleaned_Users.acquisition_campaign_id,10000,0
+foreign key (no orphans),Customer_Segments.user_id,10000,0
+foreign key (no orphans),Campaign_Performance.campaign_id,10,0
+foreign key (no orphans),Customer_Cohorts.acquisition_channel,1008,0
+foreign key (no orphans),Customer_Funnel (campaign cut).cut_value,60,0

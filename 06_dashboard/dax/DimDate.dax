@@ -1,0 +1,16 @@
+DimDate =
+VAR _start = DATE(2025, 11, 1)
+VAR _end = DATE(2026, 10, 31)
+RETURN
+ADDCOLUMNS(
+    CALENDAR(_start, _end),
+    "Year", YEAR([Date]),
+    "Quarter", "Q" & ROUNDUP(MONTH([Date]) / 3, 0),
+    "MonthNumber", MONTH([Date]),
+    "MonthStart", DATE(YEAR([Date]), MONTH([Date]), 1),
+    "MonthLabel", FORMAT([Date], "mmm yy"),
+    "MonthSort", YEAR([Date]) * 100 + MONTH([Date]),
+    "WeekdayNumber", WEEKDAY([Date], 2),
+    "WeekdayName", FORMAT([Date], "ddd"),
+    "IsMonthStart", IF(DAY([Date]) = 1, 1, 0)
+)

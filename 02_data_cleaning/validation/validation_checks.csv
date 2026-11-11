@@ -1,0 +1,63 @@
+check_id,table,dimension,description,records_tested,violations_raw,pass_rate_raw,violations_after_correction,severity,status,treatment
+UQ01,Users,Uniqueness,Duplicate user_id,10000,0,1.0,0,-,Pass,None needed
+UQ02,Users,Uniqueness,Fully duplicated user rows,10000,0,1.0,0,-,Pass,None needed
+UQ03,Support_Tickets,Uniqueness,Duplicate ticket_id,7614,0,1.0,0,-,Pass,None needed
+UQ04,Monthly_Activity,Uniqueness,"Duplicate (user_id, activity_month)",64645,0,1.0,0,-,Pass,None needed
+UQ05,Campaigns,Uniqueness,Duplicate campaign_id,10,0,1.0,0,-,Pass,None needed
+UQ06,Users,Uniqueness,CSV vs Excel Users sheet: cells that differ,250000,0,1.0,0,-,Pass,Files are identical; CSV used only as a cross-check
+RI01,Monthly_Activity,Referential integrity,monthly_activity.user_id not in users,64645,0,1.0,0,-,Pass,None needed
+RI02,Support_Tickets,Referential integrity,support_tickets.user_id not in users,7614,0,1.0,0,-,Pass,None needed
+RI03,Users,Referential integrity,users.acquisition_campaign_id not in campaigns,10000,0,1.0,0,-,Pass,None needed
+RI04,Users,Referential integrity,Users with no monthly_activity rows (orphan parent),10000,0,1.0,0,-,Pass,None needed
+RI05,Campaigns,Referential integrity,Campaigns with no attributed users,10,0,1.0,0,-,Pass,None needed
+RI06,Users,Referential integrity,User channel/platform differs from campaign master,10000,0,1.0,0,-,Pass,None needed
+RI07,Campaigns,Referential integrity,"Campaign sheet counts (users, KYC, first traders) vs recomputed from users",30,0,1.0,0,-,Pass,None needed
+CP01,Users,Completeness,Nulls in mandatory user fields,10000,0,1.0,0,-,Pass,None needed
+CP02,Users,Completeness,Completed stage without a date,21903,0,1.0,0,-,Pass,None needed
+CP03,Users,Completeness,Date present for a stage not completed,18097,0,1.0,0,-,Pass,None needed
+CP04,Users,Completeness,Deposit amount missing/zero for depositors; positive for non-depositors,10000,0,1.0,0,-,Pass,None needed
+CP05,Users,Completeness,Trade segment missing for traders / present for non-traders,10000,0,1.0,0,-,Pass,None needed
+CP06,Monthly_Activity,Completeness,Nulls in any monthly field,517160,0,1.0,0,-,Pass,None needed
+CP07,Support_Tickets,Completeness,"Resolved ticket lacking time/CSAT, or unresolved ticket with them",7614,0,1.0,0,-,Pass,Nulls are structural (unresolved). Averages must state 'resolved tickets only'.
+CP08,Campaigns,Completeness,Nulls in campaign master,130,0,1.0,0,-,Pass,None needed
+VL01,Users,Validity,Non-Boolean values in Boolean columns,70000,0,1.0,0,-,Pass,All dtype=bool
+VL02,All,Validity,"Negative financial amounts, counts or durations",276194,0,1.0,0,-,Pass,None needed
+VL03,Support_Tickets,Validity,CSAT outside 1-5,6243,0,1.0,0,-,Pass,None needed
+VL04,Monthly_Activity,Validity,Non-integer trade_count,64645,0,1.0,0,-,Pass,None needed
+VL05,Users,Validity,"days_inactive_as_of_snapshot negative, or larger than tenure",10000,0,1.0,0,-,Pass,None needed
+VL06,Users,Validity,days_inactive does not recompute from last_active_date and snapshot,10000,0,1.0,0,-,Pass,Snapshot 2026-10-31 confirmed
+VL07,Users,Validity,churn flags inconsistent with days_inactive (>30 / >90),20000,0,1.0,0,-,Pass,"Flags are arithmetic functions of days_inactive; the problem is the definition (see MD checks), not the arithmetic"
+JR01,Users,Journey chronology,KYC date earlier than registration,7075,0,1.0,0,-,Pass,None needed
+JR02,Users,Journey chronology,Bank-link date earlier than KYC date,6226,0,1.0,0,-,Pass,None needed
+JR03,Users,Journey chronology,First deposit earlier than bank-link date,4786,0,1.0,0,-,Pass,None needed
+JR04,Users,Journey chronology,First trade earlier than first deposit,3816,0,1.0,0,-,Pass,None needed
+JR05,Users,Journey chronology,First trade earlier than registration,3816,0,1.0,0,-,Pass,None needed
+JR06,Users,Journey chronology,Stage reached while a prerequisite stage was skipped,10000,0,1.0,0,-,Pass,None needed
+JR07,Users,Journey chronology,last_active_date earlier than registration,10000,0,1.0,0,-,Pass,None needed
+JR08,Monthly_Activity,Journey chronology,Activity row before registration month,64645,0,1.0,0,-,Pass,None needed
+JR09,Monthly_Activity,Journey chronology,Activity row after observation window (> 2026-10),64645,0,1.0,0,-,Pass,None needed
+JR10,Support_Tickets,Journey chronology,Ticket created before registration,7614,0,1.0,0,-,Pass,None needed
+TM01,Users,Timeliness,Funnel events dated after the 2026-10-31 snapshot but flagged completed (events),21903,866,0.96046,0,High,Corrected,Added *_asof columns that only count events on/before snapshot; funnel rates use mature cohorts
+TM02,Users,Timeliness,Users with at least one post-snapshot funnel event,10000,388,0.9612,0,High,Corrected,Same as TM01 (user level); all in Oct-2026 registration cohort
+XT01,Monthly_Activity,Cross-table consistency,Monthly trade rows for users flagged first_trade_made=False,19718,5640,0.71397,5640,Critical,Flagged (retained),Rows kept; flag_trade_without_first_trade_flag=1. Funnel metrics use Users table only; trading behaviour uses Monthly_Activity only
+XT02,Monthly_Activity,Cross-table consistency,Trade rows in a month earlier than the user's first-trade month,14078,2242,0.84074,2242,Critical,Flagged (retained),flag_trade_before_first_trade_month=1
+XT03,Monthly_Activity,Cross-table consistency,Monthly deposit rows for users flagged first_deposit_made=False,5680,2613,0.53996,2613,Critical,Flagged (retained),flag_deposit_without_first_deposit_flag=1
+XT04,Monthly_Activity,Cross-table consistency,Deposit rows in a month earlier than the first-deposit month,3067,361,0.8823,361,High,Flagged (retained),flag_deposit_before_first_deposit_month=1
+XT05,Monthly_Activity,Cross-table consistency,Withdrawal rows for users who never made a first deposit,3895,1818,0.53325,1818,High,Flagged (retained),flag_withdrawal_without_deposit_flag=1
+XT06,Users,Cross-table consistency,first_trade_made=True but no trade in Monthly_Activity,3816,114,0.97013,114,High,Flagged (retained),flag_users_trade_not_in_monthly=1
+XT07,Users,Cross-table consistency,first_deposit_made=True but no deposit in Monthly_Activity,4786,2548,0.46761,2548,High,Flagged (retained),flag_users_deposit_not_in_monthly=1
+XT08,Users,Cross-table consistency,Month of last_active_date differs from last active month in Monthly_Activity,10000,6336,0.3664,6336,Critical,Flagged (retained),flag_last_active_conflict=1; recency used only as proxy; retention measured from Monthly_Activity
+XT09,Monthly_Activity,Cross-table consistency,Active monthly rows after the month of last_active_date,35067,3180,0.90932,3180,High,Flagged (retained),flag_active_after_last_active_month=1
+XT10,Users,Cross-table consistency,last_active_date earlier than the user's latest funnel event (on/before snapshot),10000,733,0.9267,0,High,Corrected,"last_active_date_adj = max(last_active_date, latest as-of funnel event); days_inactive_adj recomputed"
+MS01,Analysis_Summary / Funnel_Summary,Reported-metric accuracy,Pre-computed summary KPIs that do not reproduce from row-level data,17,3,0.82353,0,High,Corrected,All KPIs recomputed from row-level data. Mismatches: Analysis: 30d churn proxy; Analysis: blended CAC (all users); Funnel: churn proxy count. 'Blended CAC' = spend / paid-channel users only (excl. organic).
+MD01,Users,Definition validity,Users flagged neither active_30d nor churned_30d_proxy although tenure>=30 d (boundary),9137,10,0.99891,0,Medium,Corrected,eligible_30d redefined as tenure>=31 so that '>30 days inactive' is observable; 21 users with tenure=30 treated as not yet eligible
+MD02,Users,Definition validity,Users with last_active_date in Jul-Oct 2026 (every user has one) but no active month Jul-Oct in Monthly_Activity,7434,926,0.87544,926,High,Documented,"Max observable inactivity is 120 days (no user is older), so churned_90d_proxy is bounded and under-states long-run inactivity. Treated as a recency proxy; long-run engagement from cohort retention"
+OL01,Users,Outliers,"First deposit above Tukey fence on raw scale (Rs 22,944)",4786,321,0.93293,321,Low,Flagged (retained),"flag_deposit_outlier_iqr=1. Log-normal body (log-skew ~0): extremes are legitimate right-tail values, not errors"
+OL02,Users,Outliers,"First deposit above Tukey fence on log scale (Rs 62,936)",4786,17,0.99645,17,Low,Flagged (retained),flag_deposit_outlier_log=1. Almost nothing is an outlier once the skew is respected
+OL03,Monthly_Activity,Outliers,"Monthly trading value above Tukey fence on raw scale (Rs 30,365)",19718,1555,0.92114,1555,Low,Flagged (retained),flag_trading_value_outlier_iqr=1. Log-normal body: legitimate active-trader tail
+OL04,Monthly_Activity,Outliers,"Monthly trading value above Tukey fence on log scale (Rs 105,451)",19718,70,0.99645,70,Low,Flagged (retained),flag_trading_value_outlier_log=1
+OL05,Monthly_Activity,Outliers,"Average trade size above log-scale fence (Rs 35,759)",19718,76,0.99615,76,Low,Flagged (retained),flag_avg_trade_size_outlier=1
+OL06,Support_Tickets,Outliers,Resolution time above Tukey fence (27.9 h),6243,169,0.97293,169,Low,Flagged (retained),flag_resolution_outlier=1. Long tail is expected in service data; use median alongside mean
+XT11,Monthly_Activity,Cross-table consistency,Cumulative withdrawals exceed cumulative deposits in a user-month (informational),64645,11557,0.82122,11557,Medium,Flagged (retained),flag_cum_withdrawal_exceeds_deposits=1; do not use for cash-balance analysis
+RC01,Customer_Cohorts,Reconciliation,"Rebuilt cohort table vs supplied Cohort_Retention sheet (cohort size & active users, per cell)",156,0,1.0,0,-,Pass,Exact reconciliation
+RC02,Campaign_Performance,Reconciliation,Recomputed CAC vs supplied Campaigns.cac_inr (paid campaigns),8,0,1.0,0,-,Pass,CAC reproduces. Supplied cost-per-KYC / cost-per-first-trade use eventual (flag) completions; new *_asof columns use on-snapshot events and *_at_maturity columns use mature-cohort rates

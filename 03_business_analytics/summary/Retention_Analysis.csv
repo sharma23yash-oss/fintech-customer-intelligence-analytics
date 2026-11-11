@@ -1,0 +1,349 @@
+dimension,value,metric,eligible_n,successes,rate,ci_low,ci_high,definition
+Overall,All,m1_retention,9116,6161,0.6758446687143485,0.6661638715997704,0.6853773218349928,Active in the calendar month after registration month (30-day retention proxy)
+Overall,All,m3_retention,7434,4164,0.5601291364003228,0.5488172531832948,0.5713789069500427,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+Overall,All,m6_retention,4955,2017,0.4070635721493441,0.3934612050036453,0.4208099344495689,Active 6 calendar months after registration month; registered <= Apr-2026
+Overall,All,active_last_30d,9116,4923,0.5400394910048267,0.5297935574025241,0.5502516925062024,Recency proxy: days since last activity <= 30; tenure >= 31 d
+Overall,All,inactive_90d_proxy,7466,1110,0.14867398874899546,0.14078464749945319,0.15692469080833643,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+Overall,All,dormant_3m,7434,1632,0.2195318805488297,0.21026845537157415,0.2290850258856766,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+acquisition_channel,Affiliate,m1_retention,692,448,0.6473988439306358,0.6110757307270466,0.682094439035727,Active in the calendar month after registration month (30-day retention proxy)
+acquisition_channel,Affiliate,m3_retention,563,306,0.5435168738898757,0.50221520354872,0.5842286989453807,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+acquisition_channel,Affiliate,m6_retention,363,135,0.371900826446281,0.3237652029671818,0.42271938329566294,Active 6 calendar months after registration month; registered <= Apr-2026
+acquisition_channel,Affiliate,active_last_30d,692,343,0.4956647398843931,0.458539030851945,0.532838317096209,Recency proxy: days since last activity <= 30; tenure >= 31 d
+acquisition_channel,Affiliate,inactive_90d_proxy,563,81,0.1438721136767318,0.11729268170239848,0.17527864686628813,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+acquisition_channel,Affiliate,dormant_3m,563,142,0.2522202486678508,0.21810794739130085,0.2896910567749425,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+acquisition_channel,CRM,m1_retention,512,344,0.671875,0.6300555053368759,0.711134503378978,Active in the calendar month after registration month (30-day retention proxy)
+acquisition_channel,CRM,m3_retention,427,239,0.5597189695550351,0.5123078159777917,0.6060651545060239,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+acquisition_channel,CRM,m6_retention,281,109,0.3879003558718861,0.33280387551199947,0.4460205658617324,Active 6 calendar months after registration month; registered <= Apr-2026
+acquisition_channel,CRM,active_last_30d,512,256,0.5,0.45685128225525845,0.5431487177447416,Recency proxy: days since last activity <= 30; tenure >= 31 d
+acquisition_channel,CRM,inactive_90d_proxy,431,54,0.12529002320185614,0.09730900538571402,0.1598917776120488,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+acquisition_channel,CRM,dormant_3m,427,94,0.22014051522248243,0.183431290577671,0.2618404751942507,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+acquisition_channel,Organic,m1_retention,1722,1246,0.7235772357723578,0.7019735792100936,0.7441855584535253,Active in the calendar month after registration month (30-day retention proxy)
+acquisition_channel,Organic,m3_retention,1385,836,0.6036101083032491,0.5775961002492616,0.6290509356690175,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+acquisition_channel,Organic,m6_retention,951,436,0.45846477392218715,0.42702637084815304,0.49023739311018294,Active 6 calendar months after registration month; registered <= Apr-2026
+acquisition_channel,Organic,active_last_30d,1722,1080,0.627177700348432,0.6040788339362393,0.6497103898256633,Recency proxy: days since last activity <= 30; tenure >= 31 d
+acquisition_channel,Organic,inactive_90d_proxy,1390,171,0.12302158273381295,0.10678544952227591,0.141335714317288,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+acquisition_channel,Organic,dormant_3m,1385,241,0.1740072202166065,0.15494963960205863,0.1948682229965271,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+acquisition_channel,Paid Search,m1_retention,2400,1559,0.6495833333333333,0.6302700504567996,0.6684185153788195,Active in the calendar month after registration month (30-day retention proxy)
+acquisition_channel,Paid Search,m3_retention,1945,1061,0.5455012853470437,0.523304297845483,0.5675188865528794,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+acquisition_channel,Paid Search,m6_retention,1303,499,0.3829623944742901,0.35694825551552173,0.4096646224338792,Active 6 calendar months after registration month; registered <= Apr-2026
+acquisition_channel,Paid Search,active_last_30d,2400,1275,0.53125,0.5112508987721673,0.5511492194386165,Recency proxy: days since last activity <= 30; tenure >= 31 d
+acquisition_channel,Paid Search,inactive_90d_proxy,1955,316,0.16163682864450127,0.14598484567626951,0.17861597962782855,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+acquisition_channel,Paid Search,dormant_3m,1945,455,0.23393316195372751,0.21565511924916322,0.25326015842142835,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+acquisition_channel,Paid Social,m1_retention,2323,1516,0.65260439087387,0.6330039713896509,0.671700912690125,Active in the calendar month after registration month (30-day retention proxy)
+acquisition_channel,Paid Social,m3_retention,1911,1033,0.5405546834118262,0.5181515191708143,0.5627951241442254,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+acquisition_channel,Paid Social,m6_retention,1266,491,0.38783570300157977,0.36137260987173336,0.41497744827725136,Active 6 calendar months after registration month; registered <= Apr-2026
+acquisition_channel,Paid Social,active_last_30d,2323,1083,0.4662074903142488,0.4459934486590247,0.4865331143867796,Recency proxy: days since last activity <= 30; tenure >= 31 d
+acquisition_channel,Paid Social,inactive_90d_proxy,1921,345,0.17959396147839668,0.1630732964129296,0.1973935596649939,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+acquisition_channel,Paid Social,dormant_3m,1911,476,0.2490842490842491,0.23020981958335862,0.26896546468036325,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+acquisition_channel,Partnerships,m1_retention,533,358,0.6716697936210131,0.6306971263934108,0.7101855473785174,Active in the calendar month after registration month (30-day retention proxy)
+acquisition_channel,Partnerships,m3_retention,453,230,0.5077262693156733,0.46181631399896406,0.5535062835928489,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+acquisition_channel,Partnerships,m6_retention,286,109,0.3811188811188811,0.3267597665244308,0.438629328760718,Active 6 calendar months after registration month; registered <= Apr-2026
+acquisition_channel,Partnerships,active_last_30d,533,255,0.47842401500938087,0.43632116728812514,0.5208356551339824,Recency proxy: days since last activity <= 30; tenure >= 31 d
+acquisition_channel,Partnerships,inactive_90d_proxy,454,71,0.15638766519823788,0.1258747126906845,0.19266689645972906,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+acquisition_channel,Partnerships,dormant_3m,453,108,0.23841059602649006,0.20147367080690812,0.2797469535845659,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+acquisition_channel,Referral,m1_retention,934,690,0.7387580299785867,0.7096463502487731,0.7659137016832376,Active in the calendar month after registration month (30-day retention proxy)
+acquisition_channel,Referral,m3_retention,750,459,0.612,0.5766383140145888,0.6462201750897536,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+acquisition_channel,Referral,m6_retention,505,238,0.47128712871287126,0.4281305566922464,0.5148772477011049,Active 6 calendar months after registration month; registered <= Apr-2026
+acquisition_channel,Referral,active_last_30d,934,631,0.6755888650963597,0.6448983187397547,0.7048409122775089,Recency proxy: days since last activity <= 30; tenure >= 31 d
+acquisition_channel,Referral,inactive_90d_proxy,752,72,0.09574468085106383,0.07672193586021628,0.11887671867269112,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+acquisition_channel,Referral,dormant_3m,750,116,0.15466666666666667,0.13055417527563104,0.18229881665264677,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+acquisition_campaign_id,CMP01,m1_retention,984,647,0.657520325203252,0.6273087200456959,0.6865067742602737,Active in the calendar month after registration month (30-day retention proxy)
+acquisition_campaign_id,CMP01,m3_retention,819,448,0.5470085470085471,0.5127757560989569,0.5808024003773323,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+acquisition_campaign_id,CMP01,m6_retention,544,207,0.3805147058823529,0.3406874521143278,0.42201768017208485,Active 6 calendar months after registration month; registered <= Apr-2026
+acquisition_campaign_id,CMP01,active_last_30d,984,521,0.5294715447154471,0.4982304814209663,0.5604833852556345,Recency proxy: days since last activity <= 30; tenure >= 31 d
+acquisition_campaign_id,CMP01,inactive_90d_proxy,824,129,0.15655339805825244,0.13334207349541188,0.18295225140925592,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+acquisition_campaign_id,CMP01,dormant_3m,819,192,0.23443223443223443,0.20669889132100547,0.2646452896246346,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+acquisition_campaign_id,CMP02,m1_retention,1416,912,0.6440677966101694,0.6187700054645375,0.6685859925566502,Active in the calendar month after registration month (30-day retention proxy)
+acquisition_campaign_id,CMP02,m3_retention,1126,613,0.544404973357016,0.5152135177381966,0.5732944642656524,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+acquisition_campaign_id,CMP02,m6_retention,759,292,0.3847167325428195,0.3507663512427143,0.4198282256655193,Active 6 calendar months after registration month; registered <= Apr-2026
+acquisition_campaign_id,CMP02,active_last_30d,1416,754,0.5324858757062146,0.5064448330815304,0.5583511272565805,Recency proxy: days since last activity <= 30; tenure >= 31 d
+acquisition_campaign_id,CMP02,inactive_90d_proxy,1131,187,0.16534040671971706,0.14482973280973174,0.18811682114105746,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+acquisition_campaign_id,CMP02,dormant_3m,1126,263,0.23357015985790408,0.2097881201957487,0.2591639877811571,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+acquisition_campaign_id,CMP03,m1_retention,1267,828,0.6535122336227308,0.6268814532410237,0.6792149162829199,Active in the calendar month after registration month (30-day retention proxy)
+acquisition_campaign_id,CMP03,m3_retention,1041,571,0.5485110470701249,0.5181571705502861,0.5785081995881158,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+acquisition_campaign_id,CMP03,m6_retention,685,273,0.39854014598540144,0.36253911067575467,0.43567284400294076,Active 6 calendar months after registration month; registered <= Apr-2026
+acquisition_campaign_id,CMP03,active_last_30d,1267,590,0.46566692975532753,0.43834504768956917,0.4931963812343816,Recency proxy: days since last activity <= 30; tenure >= 31 d
+acquisition_campaign_id,CMP03,inactive_90d_proxy,1044,187,0.17911877394636017,0.157047716997543,0.2035426623116961,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+acquisition_campaign_id,CMP03,dormant_3m,1041,250,0.24015369836695485,0.2151891678025826,0.2670289980897403,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+acquisition_campaign_id,CMP04,m1_retention,1056,688,0.6515151515151515,0.6222733909008441,0.6796585204338307,Active in the calendar month after registration month (30-day retention proxy)
+acquisition_campaign_id,CMP04,m3_retention,870,462,0.5310344827586206,0.4978096898749155,0.5639864068089685,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+acquisition_campaign_id,CMP04,m6_retention,581,218,0.37521514629948366,0.33678504238166146,0.41528457783687284,Active 6 calendar months after registration month; registered <= Apr-2026
+acquisition_campaign_id,CMP04,active_last_30d,1056,493,0.4668560606060606,0.4369394566658938,0.4970129377296461,Recency proxy: days since last activity <= 30; tenure >= 31 d
+acquisition_campaign_id,CMP04,inactive_90d_proxy,877,158,0.18015963511972635,0.15613572379733093,0.2069733755004316,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+acquisition_campaign_id,CMP04,dormant_3m,870,226,0.2597701149425287,0.23173218518907826,0.28992025159122614,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+acquisition_campaign_id,CMP05,m1_retention,934,690,0.7387580299785867,0.7096463502487731,0.7659137016832376,Active in the calendar month after registration month (30-day retention proxy)
+acquisition_campaign_id,CMP05,m3_retention,750,459,0.612,0.5766383140145888,0.6462201750897536,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+acquisition_campaign_id,CMP05,m6_retention,505,238,0.47128712871287126,0.4281305566922464,0.5148772477011049,Active 6 calendar months after registration month; registered <= Apr-2026
+acquisition_campaign_id,CMP05,active_last_30d,934,631,0.6755888650963597,0.6448983187397547,0.7048409122775089,Recency proxy: days since last activity <= 30; tenure >= 31 d
+acquisition_campaign_id,CMP05,inactive_90d_proxy,752,72,0.09574468085106383,0.07672193586021628,0.11887671867269112,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+acquisition_campaign_id,CMP05,dormant_3m,750,116,0.15466666666666667,0.13055417527563104,0.18229881665264677,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+acquisition_campaign_id,CMP06,m1_retention,692,448,0.6473988439306358,0.6110757307270466,0.682094439035727,Active in the calendar month after registration month (30-day retention proxy)
+acquisition_campaign_id,CMP06,m3_retention,563,306,0.5435168738898757,0.50221520354872,0.5842286989453807,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+acquisition_campaign_id,CMP06,m6_retention,363,135,0.371900826446281,0.3237652029671818,0.42271938329566294,Active 6 calendar months after registration month; registered <= Apr-2026
+acquisition_campaign_id,CMP06,active_last_30d,692,343,0.4956647398843931,0.458539030851945,0.532838317096209,Recency proxy: days since last activity <= 30; tenure >= 31 d
+acquisition_campaign_id,CMP06,inactive_90d_proxy,563,81,0.1438721136767318,0.11729268170239848,0.17527864686628813,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+acquisition_campaign_id,CMP06,dormant_3m,563,142,0.2522202486678508,0.21810794739130085,0.2896910567749425,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+acquisition_campaign_id,CMP07,m1_retention,1074,770,0.7169459962756052,0.6892675863030602,0.7430779457305892,Active in the calendar month after registration month (30-day retention proxy)
+acquisition_campaign_id,CMP07,m3_retention,870,534,0.6137931034482759,0.5810069460912275,0.645578741749681,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+acquisition_campaign_id,CMP07,m6_retention,599,290,0.48414023372287146,0.4443473282525269,0.5241352714884333,Active 6 calendar months after registration month; registered <= Apr-2026
+acquisition_campaign_id,CMP07,active_last_30d,1074,678,0.6312849162011173,0.602010259191632,0.659623732296542,Recency proxy: days since last activity <= 30; tenure >= 31 d
+acquisition_campaign_id,CMP07,inactive_90d_proxy,873,111,0.12714776632302405,0.10667028374572034,0.15089231364929373,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+acquisition_campaign_id,CMP07,dormant_3m,870,157,0.18045977011494252,0.1563273481162147,0.20740173047194135,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+acquisition_campaign_id,CMP08,m1_retention,648,476,0.7345679012345679,0.6992590237681839,0.7671119473389072,Active in the calendar month after registration month (30-day retention proxy)
+acquisition_campaign_id,CMP08,m3_retention,515,302,0.5864077669902913,0.5433866939844303,0.62814928154259,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+acquisition_campaign_id,CMP08,m6_retention,352,146,0.4147727272727273,0.3644933833141412,0.4668922669302373,Active 6 calendar months after registration month; registered <= Apr-2026
+acquisition_campaign_id,CMP08,active_last_30d,648,402,0.6203703703703703,0.5823987012652201,0.6569232444344713,Recency proxy: days since last activity <= 30; tenure >= 31 d
+acquisition_campaign_id,CMP08,inactive_90d_proxy,517,60,0.11605415860735009,0.09123345818021972,0.14653863990103952,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+acquisition_campaign_id,CMP08,dormant_3m,515,84,0.16310679611650486,0.1337121024128904,0.19749033008288486,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+acquisition_campaign_id,CMP09,m1_retention,533,358,0.6716697936210131,0.6306971263934108,0.7101855473785174,Active in the calendar month after registration month (30-day retention proxy)
+acquisition_campaign_id,CMP09,m3_retention,453,230,0.5077262693156733,0.46181631399896406,0.5535062835928489,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+acquisition_campaign_id,CMP09,m6_retention,286,109,0.3811188811188811,0.3267597665244308,0.438629328760718,Active 6 calendar months after registration month; registered <= Apr-2026
+acquisition_campaign_id,CMP09,active_last_30d,533,255,0.47842401500938087,0.43632116728812514,0.5208356551339824,Recency proxy: days since last activity <= 30; tenure >= 31 d
+acquisition_campaign_id,CMP09,inactive_90d_proxy,454,71,0.15638766519823788,0.1258747126906845,0.19266689645972906,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+acquisition_campaign_id,CMP09,dormant_3m,453,108,0.23841059602649006,0.20147367080690812,0.2797469535845659,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+acquisition_campaign_id,CMP10,m1_retention,512,344,0.671875,0.6300555053368759,0.711134503378978,Active in the calendar month after registration month (30-day retention proxy)
+acquisition_campaign_id,CMP10,m3_retention,427,239,0.5597189695550351,0.5123078159777917,0.6060651545060239,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+acquisition_campaign_id,CMP10,m6_retention,281,109,0.3879003558718861,0.33280387551199947,0.4460205658617324,Active 6 calendar months after registration month; registered <= Apr-2026
+acquisition_campaign_id,CMP10,active_last_30d,512,256,0.5,0.45685128225525845,0.5431487177447416,Recency proxy: days since last activity <= 30; tenure >= 31 d
+acquisition_campaign_id,CMP10,inactive_90d_proxy,431,54,0.12529002320185614,0.09730900538571402,0.1598917776120488,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+acquisition_campaign_id,CMP10,dormant_3m,427,94,0.22014051522248243,0.183431290577671,0.2618404751942507,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+device_type,Android,m1_retention,5503,3676,0.6679992731237507,0.6554431876801365,0.6803209643158099,Active in the calendar month after registration month (30-day retention proxy)
+device_type,Android,m3_retention,4476,2475,0.5529490616621984,0.5383441072420732,0.5674632052307607,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+device_type,Android,m6_retention,2997,1235,0.41207874541207873,0.39457993189531937,0.4298026679726642,Active 6 calendar months after registration month; registered <= Apr-2026
+device_type,Android,active_last_30d,5503,2954,0.5367981101217518,0.5236021217823642,0.5499427573730488,Recency proxy: days since last activity <= 30; tenure >= 31 d
+device_type,Android,inactive_90d_proxy,4493,677,0.15067883374137547,0.14051702595793822,0.1614374836249655,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+device_type,Android,dormant_3m,4476,976,0.21805183199285075,0.20619932062334453,0.23038790156772573,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+device_type,Web,m1_retention,1123,768,0.6838824577025824,0.6561002192738878,0.7104109212448861,Active in the calendar month after registration month (30-day retention proxy)
+device_type,Web,m3_retention,914,536,0.5864332603938731,0.5542088168828869,0.6179341759821129,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+device_type,Web,m6_retention,581,222,0.38209982788296043,0.3434858558369544,0.42226268188676425,Active 6 calendar months after registration month; registered <= Apr-2026
+device_type,Web,active_last_30d,1123,615,0.5476402493321461,0.5184161313693727,0.5765395394187842,Recency proxy: days since last activity <= 30; tenure >= 31 d
+device_type,Web,inactive_90d_proxy,918,127,0.1383442265795207,0.11751224261498562,0.162190474207514,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+device_type,Web,dormant_3m,914,213,0.23304157549234136,0.20678500773496294,0.261532837087063,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+device_type,iOS,m1_retention,2490,1717,0.6895582329317269,0.6711046634681727,0.707427798256742,Active in the calendar month after registration month (30-day retention proxy)
+device_type,iOS,m3_retention,2044,1153,0.5640900195694716,0.5424921142756879,0.5854474685514214,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+device_type,iOS,m6_retention,1377,560,0.4066811909949165,0.3810302360140491,0.4328513851653824,Active 6 calendar months after registration month; registered <= Apr-2026
+device_type,iOS,active_last_30d,2490,1354,0.5437751004016064,0.5241587205352454,0.5632566149054656,Recency proxy: days since last activity <= 30; tenure >= 31 d
+device_type,iOS,inactive_90d_proxy,2055,306,0.14890510948905109,0.13416867652486497,0.164951760909467,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+device_type,iOS,dormant_3m,2044,443,0.21673189823874756,0.1994100505984665,0.23511652606644745,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+age_group,18-24,m1_retention,1646,1133,0.6883353584447145,0.6655424610775998,0.710251190870563,Active in the calendar month after registration month (30-day retention proxy)
+age_group,18-24,m3_retention,1348,748,0.5548961424332344,0.5282467696751372,0.5812335126301269,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+age_group,18-24,m6_retention,885,345,0.3898305084745763,0.35823991579514536,0.4223734128339376,Active 6 calendar months after registration month; registered <= Apr-2026
+age_group,18-24,active_last_30d,1646,903,0.548602673147023,0.524476403965784,0.5725026029885806,Recency proxy: days since last activity <= 30; tenure >= 31 d
+age_group,18-24,inactive_90d_proxy,1356,197,0.14528023598820058,0.12752600562888206,0.1650386577848567,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+age_group,18-24,dormant_3m,1348,289,0.21439169139465875,0.19331064457130454,0.23709599478644272,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+age_group,25-34,m1_retention,3347,2247,0.6713474753510607,0.6552452730641374,0.687056792184187,Active in the calendar month after registration month (30-day retention proxy)
+age_group,25-34,m3_retention,2692,1508,0.5601783060921248,0.5413549110035336,0.5788301918600769,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+age_group,25-34,m6_retention,1841,748,0.40630092341118956,0.38408303289642587,0.4289090418703183,Active 6 calendar months after registration month; registered <= Apr-2026
+age_group,25-34,active_last_30d,3347,1775,0.5303256647744249,0.5133923345371817,0.5471894607944748,Recency proxy: days since last activity <= 30; tenure >= 31 d
+age_group,25-34,inactive_90d_proxy,2704,416,0.15384615384615385,0.1407385900683281,0.16793589074325263,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+age_group,25-34,dormant_3m,2692,616,0.2288261515601783,0.21335025459864032,0.24507489916410302,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+age_group,35-44,m1_retention,2182,1476,0.6764436296975253,0.6565183743458793,0.6957486883726636,Active in the calendar month after registration month (30-day retention proxy)
+age_group,35-44,m3_retention,1817,1011,0.5564116675839296,0.5334727333157437,0.5791125678988155,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+age_group,35-44,m6_retention,1208,518,0.4288079470198676,0.40116793458343514,0.45689932437186076,Active 6 calendar months after registration month; registered <= Apr-2026
+age_group,35-44,active_last_30d,2182,1209,0.5540788267644363,0.5331453021082914,0.5748222651664828,Recency proxy: days since last activity <= 30; tenure >= 31 d
+age_group,35-44,inactive_90d_proxy,1827,248,0.13574165298303228,0.12079786184250052,0.15221406884555028,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+age_group,35-44,dormant_3m,1817,416,0.22894881673087508,0.21021338625896901,0.24882797131985618,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+age_group,45-54,m1_retention,1286,864,0.671850699844479,0.6457089851153348,0.6969687514377427,Active in the calendar month after registration month (30-day retention proxy)
+age_group,45-54,m3_retention,1048,610,0.5820610687022901,0.5519526255099366,0.6115700950213677,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+age_group,45-54,m6_retention,680,273,0.40147058823529413,0.3652791828937533,0.43876900604356794,Active 6 calendar months after registration month; registered <= Apr-2026
+age_group,45-54,active_last_30d,1286,697,0.5419906687402799,0.5146745830828515,0.5690566285636017,Recency proxy: days since last activity <= 30; tenure >= 31 d
+age_group,45-54,inactive_90d_proxy,1048,165,0.15744274809160305,0.1366472189768624,0.18074049415408813,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+age_group,45-54,dormant_3m,1048,206,0.1965648854961832,0.17363107870151545,0.22171514072924298,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+age_group,55+,m1_retention,655,441,0.6732824427480916,0.6364440073978953,0.7081001136776407,Active in the calendar month after registration month (30-day retention proxy)
+age_group,55+,m3_retention,529,287,0.5425330812854442,0.49992438612049717,0.5845284794215324,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+age_group,55+,m6_retention,341,133,0.39002932551319647,0.33975856262108906,0.4427502762197004,Active 6 calendar months after registration month; registered <= Apr-2026
+age_group,55+,active_last_30d,655,339,0.517557251908397,0.47929831800591827,0.5556114387550393,Recency proxy: days since last activity <= 30; tenure >= 31 d
+age_group,55+,inactive_90d_proxy,531,84,0.15819209039548024,0.1296225708856749,0.1916718086091139,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+age_group,55+,dormant_3m,529,105,0.19848771266540643,0.16672464738615736,0.23459837243812068,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+risk_profile,Aggressive,m1_retention,1888,1272,0.673728813559322,0.6522457141054672,0.6945063606982584,Active in the calendar month after registration month (30-day retention proxy)
+risk_profile,Aggressive,m3_retention,1544,850,0.5505181347150259,0.5256105295764085,0.5751749771576139,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+risk_profile,Aggressive,m6_retention,1032,419,0.4060077519379845,0.3764477136265194,0.43626496367858203,Active 6 calendar months after registration month; registered <= Apr-2026
+risk_profile,Aggressive,active_last_30d,1888,1049,0.555614406779661,0.5331098332860167,0.5778931174895663,Recency proxy: days since last activity <= 30; tenure >= 31 d
+risk_profile,Aggressive,inactive_90d_proxy,1550,221,0.14258064516129032,0.12605666135251065,0.16087194192339593,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+risk_profile,Aggressive,dormant_3m,1544,327,0.21178756476683938,0.19213561732204645,0.23287014554154375,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+risk_profile,Conservative,m1_retention,2550,1737,0.6811764705882353,0.6628274739251165,0.698980400141936,Active in the calendar month after registration month (30-day retention proxy)
+risk_profile,Conservative,m3_retention,2076,1165,0.5611753371868978,0.5397347497358921,0.5823899351439564,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+risk_profile,Conservative,m6_retention,1382,564,0.4081041968162084,0.3824810680007108,0.4342368022089872,Active 6 calendar months after registration month; registered <= Apr-2026
+risk_profile,Conservative,active_last_30d,2550,1361,0.5337254901960784,0.5143265665383943,0.553022951145083,Recency proxy: days since last activity <= 30; tenure >= 31 d
+risk_profile,Conservative,inactive_90d_proxy,2082,323,0.15513928914505284,0.14022439894446978,0.17132447418185007,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+risk_profile,Conservative,dormant_3m,2076,463,0.22302504816955684,0.20563887513413973,0.24143440198465624,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+risk_profile,Moderate,m1_retention,4678,3152,0.6737922188969645,0.6602194208744993,0.6870798128287511,Active in the calendar month after registration month (30-day retention proxy)
+risk_profile,Moderate,m3_retention,3814,2149,0.5634504457262717,0.5476541876516319,0.5791190132061512,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+risk_profile,Moderate,m6_retention,2541,1034,0.4069264069264069,0.38797937930314713,0.4261544355480404,Active 6 calendar months after registration month; registered <= Apr-2026
+risk_profile,Moderate,active_last_30d,4678,2513,0.5371953826421547,0.5228820518909432,0.5514476734034794,Recency proxy: days since last activity <= 30; tenure >= 31 d
+risk_profile,Moderate,inactive_90d_proxy,3834,566,0.1476264997391758,0.13675065852966545,0.15920777810826142,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+risk_profile,Moderate,dormant_3m,3814,842,0.22076560041950707,0.20788687548627025,0.23420626949910575,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+city,Ahmedabad,m1_retention,824,539,0.654126213592233,0.6210010806980876,0.685820900705118,Active in the calendar month after registration month (30-day retention proxy)
+city,Ahmedabad,m3_retention,653,376,0.5758039816232772,0.5375619884945401,0.6131592812910521,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+city,Ahmedabad,m6_retention,447,164,0.3668903803131991,0.32352124210016053,0.41252796010300796,Active 6 calendar months after registration month; registered <= Apr-2026
+city,Ahmedabad,active_last_30d,824,443,0.537621359223301,0.5034822695080555,0.5714112850076877,Recency proxy: days since last activity <= 30; tenure >= 31 d
+city,Ahmedabad,inactive_90d_proxy,655,88,0.13435114503816795,0.11035508466304686,0.16261128540223133,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+city,Ahmedabad,dormant_3m,653,133,0.20367534456355282,0.17456046117700275,0.2362563932975007,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+city,Bengaluru,m1_retention,827,558,0.6747279322853688,0.6420542728397924,0.7057857967956229,Active in the calendar month after registration month (30-day retention proxy)
+city,Bengaluru,m3_retention,667,378,0.5667166416791605,0.5288340390172444,0.6038351335564303,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+city,Bengaluru,m6_retention,436,184,0.42201834862385323,0.3765381593863755,0.4688607296682296,Active 6 calendar months after registration month; registered <= Apr-2026
+city,Bengaluru,active_last_30d,827,451,0.5453446191051995,0.511275346119008,0.5789945681462381,Recency proxy: days since last activity <= 30; tenure >= 31 d
+city,Bengaluru,inactive_90d_proxy,671,89,0.13263785394932937,0.10905268436609755,0.16040551145348442,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+city,Bengaluru,dormant_3m,667,130,0.19490254872563717,0.16662245672843498,0.22667694509756983,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+city,Bhopal,m1_retention,784,553,0.7053571428571429,0.6725062086374044,0.7362053902423705,Active in the calendar month after registration month (30-day retention proxy)
+city,Bhopal,m3_retention,642,364,0.5669781931464174,0.5283629572490736,0.6047966286308077,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+city,Bhopal,m6_retention,421,168,0.3990498812351544,0.3533870804163588,0.44653835061487723,Active 6 calendar months after registration month; registered <= Apr-2026
+city,Bhopal,active_last_30d,784,436,0.5561224489795918,0.5211537867977157,0.5905437930203593,Recency proxy: days since last activity <= 30; tenure >= 31 d
+city,Bhopal,inactive_90d_proxy,645,82,0.12713178294573643,0.10361219932576449,0.15506665233849376,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+city,Bhopal,dormant_3m,642,145,0.22585669781931464,0.19519686341546513,0.259777854843625,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+city,Chennai,m1_retention,871,607,0.6969001148105626,0.6655674523321407,0.726503523716552,Active in the calendar month after registration month (30-day retention proxy)
+city,Chennai,m3_retention,725,408,0.5627586206896552,0.5264131539667829,0.5984425074005157,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+city,Chennai,m6_retention,488,211,0.4323770491803279,0.38911912129140913,0.4766913347578555,Active 6 calendar months after registration month; registered <= Apr-2026
+city,Chennai,active_last_30d,871,457,0.5246842709529277,0.49148305549271853,0.5576686995221323,Recency proxy: days since last activity <= 30; tenure >= 31 d
+city,Chennai,inactive_90d_proxy,726,127,0.174931129476584,0.1490264919219465,0.20425783717083196,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+city,Chennai,dormant_3m,725,157,0.21655172413793103,0.18810469604069407,0.24798676745425463,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+city,Delhi NCR,m1_retention,830,574,0.691566265060241,0.6593231115522711,0.7220442848453181,Active in the calendar month after registration month (30-day retention proxy)
+city,Delhi NCR,m3_retention,669,363,0.5426008968609866,0.5047135915510391,0.5800017411513384,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+city,Delhi NCR,m6_retention,440,184,0.41818181818181815,0.3729944944035247,0.4647854703406542,Active 6 calendar months after registration month; registered <= Apr-2026
+city,Delhi NCR,active_last_30d,830,463,0.5578313253012048,0.5238537614393763,0.5912760186051789,Recency proxy: days since last activity <= 30; tenure >= 31 d
+city,Delhi NCR,inactive_90d_proxy,671,102,0.15201192250372578,0.12683179968076513,0.18115395579133375,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+city,Delhi NCR,dormant_3m,669,127,0.1898355754857997,0.1619206362500384,0.22129229232037104,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+city,Hyderabad,m1_retention,838,560,0.6682577565632458,0.6356743658592002,0.699305516341917,Active in the calendar month after registration month (30-day retention proxy)
+city,Hyderabad,m3_retention,673,386,0.5735512630014858,0.5358723875733603,0.6103952177274957,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+city,Hyderabad,m6_retention,442,183,0.41402714932126694,0.36904059637104225,0.46049527466476947,Active 6 calendar months after registration month; registered <= Apr-2026
+city,Hyderabad,active_last_30d,838,457,0.545346062052506,0.5115014815489897,0.5787767845761341,Recency proxy: days since last activity <= 30; tenure >= 31 d
+city,Hyderabad,inactive_90d_proxy,677,113,0.16691285081240767,0.1407186439929832,0.1968658984321565,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+city,Hyderabad,dormant_3m,673,144,0.2139673105497771,0.18465183763143003,0.24652969730968463,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+city,Jaipur,m1_retention,832,551,0.6622596153846154,0.6294425123439218,0.6935852000838876,Active in the calendar month after registration month (30-day retention proxy)
+city,Jaipur,m3_retention,675,352,0.5214814814814814,0.4837811138948454,0.5589387194212034,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+city,Jaipur,m6_retention,456,185,0.4057017543859649,0.36160213353508025,0.4513769444778703,Active 6 calendar months after registration month; registered <= Apr-2026
+city,Jaipur,active_last_30d,832,471,0.5661057692307693,0.5322009134998865,0.5994029693410728,Recency proxy: days since last activity <= 30; tenure >= 31 d
+city,Jaipur,inactive_90d_proxy,678,101,0.14896755162241887,0.12414628831530641,0.17774435608069408,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+city,Jaipur,dormant_3m,675,160,0.23703703703703705,0.20649928113823662,0.27055103516530166,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+city,Kolkata,m1_retention,814,531,0.6523341523341524,0.6189717065865827,0.684265497292506,Active in the calendar month after registration month (30-day retention proxy)
+city,Kolkata,m3_retention,680,382,0.5617647058823529,0.5242275659008454,0.598607897750386,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+city,Kolkata,m6_retention,463,185,0.39956803455723544,0.35595451854521176,0.4448344428498311,Active 6 calendar months after registration month; registered <= Apr-2026
+city,Kolkata,active_last_30d,814,419,0.5147420147420148,0.4804193814659996,0.5489261543932671,Recency proxy: days since last activity <= 30; tenure >= 31 d
+city,Kolkata,inactive_90d_proxy,683,108,0.1581259150805271,0.1326843317159354,0.18739179646267234,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+city,Kolkata,dormant_3m,680,161,0.23676470588235293,0.20634769275587522,0.2701392597781619,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+city,Mumbai,m1_retention,793,539,0.6796973518284993,0.6464221954560411,0.7112398543164608,Active in the calendar month after registration month (30-day retention proxy)
+city,Mumbai,m3_retention,655,363,0.5541984732824428,0.515926134401744,0.5918387669038202,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+city,Mumbai,m6_retention,437,183,0.41876430205949655,0.3734118788922976,0.465532540146196,Active 6 calendar months after registration month; registered <= Apr-2026
+city,Mumbai,active_last_30d,793,423,0.5334174022698613,0.49861671506407657,0.5678958766480029,Recency proxy: days since last activity <= 30; tenure >= 31 d
+city,Mumbai,inactive_90d_proxy,658,87,0.13221884498480244,0.10845885128863447,0.16024834390731574,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+city,Mumbai,dormant_3m,655,163,0.24885496183206107,0.2172726991027097,0.28336599766446463,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+city,Other,m1_retention,858,573,0.6678321678321678,0.6356299381912883,0.6985381966492671,Active in the calendar month after registration month (30-day retention proxy)
+city,Other,m3_retention,699,393,0.5622317596566524,0.5252119079622846,0.5985713171626939,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+city,Other,m6_retention,456,176,0.38596491228070173,0.3424112333895286,0.43142393071915575,Active 6 calendar months after registration month; registered <= Apr-2026
+city,Other,active_last_30d,858,455,0.5303030303030303,0.4968470471442537,0.5634888660908465,Recency proxy: days since last activity <= 30; tenure >= 31 d
+city,Other,inactive_90d_proxy,703,106,0.1507823613086771,0.1262318267292422,0.1791288085248232,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+city,Other,dormant_3m,699,150,0.2145922746781116,0.1857605703206064,0.24654394893380316,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+city,Pune,m1_retention,845,576,0.6816568047337278,0.6494857446928012,0.7121836174119779,Active in the calendar month after registration month (30-day retention proxy)
+city,Pune,m3_retention,696,399,0.5732758620689655,0.5362266871433853,0.6095205790951465,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+city,Pune,m6_retention,469,194,0.4136460554371002,0.3699513318345821,0.4587439437080098,Active 6 calendar months after registration month; registered <= Apr-2026
+city,Pune,active_last_30d,845,448,0.5301775147928994,0.49646533232456597,0.5636165486765538,Recency proxy: days since last activity <= 30; tenure >= 31 d
+city,Pune,inactive_90d_proxy,699,107,0.1530758226037196,0.12828490799183576,0.1816591818286871,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+city,Pune,dormant_3m,696,162,0.23275862068965517,0.20288180142207546,0.26556934523739717,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+first_trade_segment,Derivatives,m1_retention,198,160,0.8080808080808081,0.7475719766040292,0.8568623917323297,Active in the calendar month after registration month (30-day retention proxy)
+first_trade_segment,Derivatives,m3_retention,169,108,0.6390532544378699,0.5642944838720583,0.7076307933760118,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+first_trade_segment,Derivatives,m6_retention,118,57,0.4830508474576271,0.39485197460232985,0.5723185156079102,Active 6 calendar months after registration month; registered <= Apr-2026
+first_trade_segment,Derivatives,active_last_30d,198,169,0.8535353535353535,0.797566254373796,0.8960469551925172,Recency proxy: days since last activity <= 30; tenure >= 31 d
+first_trade_segment,Derivatives,inactive_90d_proxy,170,11,0.06470588235294118,0.03651116244554317,0.11213910308353617,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+first_trade_segment,Derivatives,dormant_3m,169,20,0.11834319526627218,0.07792820907832475,0.1757236895386748,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+first_trade_segment,ETF,m1_retention,550,427,0.7763636363636364,0.7396907917449818,0.8092026102674348,Active in the calendar month after registration month (30-day retention proxy)
+first_trade_segment,ETF,m3_retention,452,309,0.6836283185840708,0.6393596328560129,0.7248019530984064,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+first_trade_segment,ETF,m6_retention,293,152,0.5187713310580204,0.46168744273775386,0.5753693579263038,Active 6 calendar months after registration month; registered <= Apr-2026
+first_trade_segment,ETF,active_last_30d,550,446,0.8109090909090909,0.7760687686044361,0.8414363086595325,Recency proxy: days since last activity <= 30; tenure >= 31 d
+first_trade_segment,ETF,inactive_90d_proxy,455,26,0.05714285714285714,0.03929068135124243,0.08241057677356578,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+first_trade_segment,ETF,dormant_3m,452,50,0.11061946902654868,0.08492014423740302,0.14288179397973208,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+first_trade_segment,Equity,m1_retention,1964,1527,0.7774949083503055,0.7585679854212384,0.7953383859045839,Active in the calendar month after registration month (30-day retention proxy)
+first_trade_segment,Equity,m3_retention,1575,1064,0.6755555555555556,0.652031067979345,0.6982257278892211,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+first_trade_segment,Equity,m6_retention,1054,507,0.4810246679316888,0.45098405163712874,0.5112031037933252,Active 6 calendar months after registration month; registered <= Apr-2026
+first_trade_segment,Equity,active_last_30d,1964,1593,0.8110997963340122,0.7931870574103377,0.8277978836540243,Recency proxy: days since last activity <= 30; tenure >= 31 d
+first_trade_segment,Equity,inactive_90d_proxy,1582,101,0.0638432364096081,0.05282094339897393,0.07697865323161011,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+first_trade_segment,Equity,dormant_3m,1575,219,0.13904761904761906,0.12283626015932406,0.1570154995105504,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+first_trade_segment,Mutual Funds,m1_retention,750,576,0.768,0.7364704507198494,0.7967980767798271,Active in the calendar month after registration month (30-day retention proxy)
+first_trade_segment,Mutual Funds,m3_retention,619,420,0.678513731825525,0.6407162912604056,0.714109076858872,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+first_trade_segment,Mutual Funds,m6_retention,424,243,0.5731132075471698,0.5255825371456218,0.6193309074563056,Active 6 calendar months after registration month; registered <= Apr-2026
+first_trade_segment,Mutual Funds,active_last_30d,750,600,0.8,0.769875698407599,0.8270666831218896,Recency proxy: days since last activity <= 30; tenure >= 31 d
+first_trade_segment,Mutual Funds,inactive_90d_proxy,621,42,0.06763285024154589,0.050422569670447816,0.09015961947957035,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+first_trade_segment,Mutual Funds,dormant_3m,619,63,0.10177705977382875,0.08036088863514122,0.1281055978680082,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+first_trade_segment,No trade,m1_retention,5654,3471,0.6139016625397948,0.6011379622276587,0.626510687391659,Active in the calendar month after registration month (30-day retention proxy)
+first_trade_segment,No trade,m3_retention,4619,2263,0.4899328859060403,0.47553060086851723,0.5043519025683297,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+first_trade_segment,No trade,m6_retention,3066,1058,0.345075016307893,0.3284506905968116,0.362087088290542,Active 6 calendar months after registration month; registered <= Apr-2026
+first_trade_segment,No trade,active_last_30d,5654,2115,0.3740714538379908,0.36154796686764856,0.3867659484600623,Recency proxy: days since last activity <= 30; tenure >= 31 d
+first_trade_segment,No trade,inactive_90d_proxy,4638,930,0.20051746442432083,0.18924426784980727,0.21228636602619574,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+first_trade_segment,No trade,dormant_3m,4619,1280,0.27711625893050446,0.26439785691483214,0.29020509552031076,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+deposit_band,< Rs3k,m1_retention,803,589,0.7334993773349938,0.7018595686334637,0.7629156734958467,Active in the calendar month after registration month (30-day retention proxy)
+deposit_band,< Rs3k,m3_retention,661,412,0.6232980332829047,0.5857451319739498,0.6594260486501266,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+deposit_band,< Rs3k,m6_retention,431,215,0.4988399071925754,0.451854320558625,0.5458459914630399,Active 6 calendar months after registration month; registered <= Apr-2026
+deposit_band,< Rs3k,active_last_30d,803,573,0.7135740971357409,0.6813454526468182,0.7437689688207908,Recency proxy: days since last activity <= 30; tenure >= 31 d
+deposit_band,< Rs3k,inactive_90d_proxy,663,61,0.09200603318250378,0.07229302440744995,0.11641985733238153,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+deposit_band,< Rs3k,dormant_3m,661,101,0.15279878971255673,0.12738195895336393,0.18222802935061702,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+deposit_band,>= Rs11.4k (top quartile),m1_retention,1078,779,0.7226345083487941,0.6951538252284827,0.7485340492255964,Active in the calendar month after registration month (30-day retention proxy)
+deposit_band,>= Rs11.4k (top quartile),m3_retention,889,554,0.6231721034870641,0.590851094504376,0.6544331754041944,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+deposit_band,>= Rs11.4k (top quartile),m6_retention,588,262,0.445578231292517,0.4058861058410943,0.485976852085486,Active 6 calendar months after registration month; registered <= Apr-2026
+deposit_band,>= Rs11.4k (top quartile),active_last_30d,1078,764,0.7087198515769945,0.680893641522603,0.7350637407780962,Recency proxy: days since last activity <= 30; tenure >= 31 d
+deposit_band,>= Rs11.4k (top quartile),inactive_90d_proxy,897,88,0.09810479375696766,0.08031846619567443,0.11931885073107495,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+deposit_band,>= Rs11.4k (top quartile),dormant_3m,889,138,0.15523059617547807,0.13291430285938322,0.18051374529607905,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+deposit_band,No deposit,m1_retention,4776,2942,0.6159966499162479,0.6021149571920003,0.6296918876205978,Active in the calendar month after registration month (30-day retention proxy)
+deposit_band,No deposit,m3_retention,3896,1921,0.49306981519507187,0.47738527008535925,0.5087680136787814,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+deposit_band,No deposit,m6_retention,2597,888,0.34193299961494034,0.3239342229145172,0.36039872531270295,Active 6 calendar months after registration month; registered <= Apr-2026
+deposit_band,No deposit,active_last_30d,4776,1784,0.37353433835845895,0.3599216324463452,0.38735032736085856,Recency proxy: days since last activity <= 30; tenure >= 31 d
+deposit_band,No deposit,inactive_90d_proxy,3912,789,0.20168711656441718,0.18940828024097164,0.21455126705021607,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+deposit_band,No deposit,dormant_3m,3896,1098,0.2818275154004107,0.2679206651714693,0.2961641940699933,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+deposit_band,Rs3-6.5k,m1_retention,1358,1034,0.7614138438880707,0.7380270575734066,0.7833257928608875,Active in the calendar month after registration month (30-day retention proxy)
+deposit_band,Rs3-6.5k,m3_retention,1092,710,0.6501831501831502,0.621414638090855,0.6778986933249265,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+deposit_band,Rs3-6.5k,m6_retention,729,361,0.49519890260631,0.4590246928416472,0.5314234476569271,Active 6 calendar months after registration month; registered <= Apr-2026
+deposit_band,Rs3-6.5k,active_last_30d,1358,1001,0.7371134020618557,0.7130549855990328,0.7598340787385526,Recency proxy: days since last activity <= 30; tenure >= 31 d
+deposit_band,Rs3-6.5k,inactive_90d_proxy,1094,100,0.09140767824497258,0.07573003065521687,0.10994484265984057,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+deposit_band,Rs3-6.5k,dormant_3m,1092,170,0.15567765567765568,0.1353848891069462,0.17838454618370161,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+deposit_band,Rs6.5-11.4k,m1_retention,1101,817,0.7420526793823796,0.7153991504411473,0.7670229451787133,Active in the calendar month after registration month (30-day retention proxy)
+deposit_band,Rs6.5-11.4k,m3_retention,896,567,0.6328125,0.6007444590534993,0.6637465358060405,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+deposit_band,Rs6.5-11.4k,m6_retention,610,291,0.47704918032786886,0.4376795604545891,0.516706066065347,Active 6 calendar months after registration month; registered <= Apr-2026
+deposit_band,Rs6.5-11.4k,active_last_30d,1101,801,0.7275204359673024,0.7004634086490291,0.7529952590912152,Recency proxy: days since last activity <= 30; tenure >= 31 d
+deposit_band,Rs6.5-11.4k,inactive_90d_proxy,900,72,0.08,0.06400848708439943,0.0995617668184968,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+deposit_band,Rs6.5-11.4k,dormant_3m,896,125,0.13950892857142858,0.11835720562640831,0.16373866546912672,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+furthest_stage_asof,Bank Linked,m1_retention,1305,805,0.6168582375478927,0.5901748807802177,0.6428556096931902,Active in the calendar month after registration month (30-day retention proxy)
+furthest_stage_asof,Bank Linked,m3_retention,1050,522,0.49714285714285716,0.46696548086686207,0.5273410638738276,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+furthest_stage_asof,Bank Linked,m6_retention,715,238,0.3328671328671329,0.2992993844346372,0.36822124876188334,Active 6 calendar months after registration month; registered <= Apr-2026
+furthest_stage_asof,Bank Linked,active_last_30d,1305,535,0.4099616858237548,0.38357912390064186,0.4368727932755847,Recency proxy: days since last activity <= 30; tenure >= 31 d
+furthest_stage_asof,Bank Linked,inactive_90d_proxy,1053,214,0.20322886989553657,0.18002254896904757,0.22859270614581545,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+furthest_stage_asof,Bank Linked,dormant_3m,1050,301,0.2866666666666667,0.26013071080952,0.31475796316197635,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+furthest_stage_asof,Funded,m1_retention,878,529,0.60250569476082,0.569755739537548,0.6343625510942389,Active in the calendar month after registration month (30-day retention proxy)
+furthest_stage_asof,Funded,m3_retention,723,342,0.4730290456431535,0.4368740909111088,0.5094691013332536,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+furthest_stage_asof,Funded,m6_retention,469,170,0.3624733475479744,0.3202466022324931,0.4069347625205235,Active 6 calendar months after registration month; registered <= Apr-2026
+furthest_stage_asof,Funded,active_last_30d,878,331,0.37699316628701596,0.3455375069821289,0.4095205442597269,Recency proxy: days since last activity <= 30; tenure >= 31 d
+furthest_stage_asof,Funded,inactive_90d_proxy,726,141,0.19421487603305784,0.1670786037143483,0.22457021433055346,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+furthest_stage_asof,Funded,dormant_3m,723,182,0.2517289073305671,0.22146144240099963,0.2846207631304394,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+furthest_stage_asof,KYC Completed,m1_retention,784,498,0.6352040816326531,0.6009244987411734,0.6681651253660076,Active in the calendar month after registration month (30-day retention proxy)
+furthest_stage_asof,KYC Completed,m3_retention,656,307,0.4679878048780488,0.430100970312826,0.5062473896572032,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+furthest_stage_asof,KYC Completed,m6_retention,440,155,0.3522727272727273,0.3090925960730764,0.39801011804835795,Active 6 calendar months after registration month; registered <= Apr-2026
+furthest_stage_asof,KYC Completed,active_last_30d,784,282,0.3596938775510204,0.32685930330637125,0.39389674714844103,Recency proxy: days since last activity <= 30; tenure >= 31 d
+furthest_stage_asof,KYC Completed,inactive_90d_proxy,660,139,0.2106060606060606,0.18121812815165245,0.24334339375357317,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+furthest_stage_asof,KYC Completed,dormant_3m,656,192,0.2926829268292683,0.25915196795192325,0.3286278870920752,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+furthest_stage_asof,Registered,m1_retention,2687,1639,0.6099739486416077,0.5913867364022725,0.6282471506314347,Active in the calendar month after registration month (30-day retention proxy)
+furthest_stage_asof,Registered,m3_retention,2190,1092,0.4986301369863014,0.47770963883604123,0.5195554326258182,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+furthest_stage_asof,Registered,m6_retention,1442,495,0.3432732316227462,0.31921193819044413,0.3681673708569647,Active 6 calendar months after registration month; registered <= Apr-2026
+furthest_stage_asof,Registered,active_last_30d,2687,967,0.3598809080759211,0.3419446698724657,0.37821723040438454,Recency proxy: days since last activity <= 30; tenure >= 31 d
+furthest_stage_asof,Registered,inactive_90d_proxy,2199,436,0.1982719417917235,0.18214003732400377,0.21545623105952413,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+furthest_stage_asof,Registered,dormant_3m,2190,605,0.2762557077625571,0.25793220114907245,0.29536280428796546,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+furthest_stage_asof,Traded,m1_retention,3462,2690,0.7770075101097631,0.7628387856252731,0.7905621545677236,Active in the calendar month after registration month (30-day retention proxy)
+furthest_stage_asof,Traded,m3_retention,2815,1901,0.6753108348134991,0.6577837880916936,0.6923600440413359,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+furthest_stage_asof,Traded,m6_retention,1889,959,0.5076760190577025,0.48513787473342174,0.5301830057882236,Active 6 calendar months after registration month; registered <= Apr-2026
+furthest_stage_asof,Traded,active_last_30d,3462,2808,0.8110918544194108,0.7977104434275162,0.8237836260071632,Recency proxy: days since last activity <= 30; tenure >= 31 d
+furthest_stage_asof,Traded,inactive_90d_proxy,2828,180,0.06364922206506365,0.05523009092799676,0.0732522366146172,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+furthest_stage_asof,Traded,dormant_3m,2815,352,0.125044404973357,0.11333386857405608,0.13777694233493576,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+ticket_status,Has unresolved ticket,m1_retention,1185,778,0.6565400843881857,0.629035785354179,0.6830327021550064,Active in the calendar month after registration month (30-day retention proxy)
+ticket_status,Has unresolved ticket,m3_retention,984,549,0.5579268292682927,0.5267302464108555,0.5886728708500496,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+ticket_status,Has unresolved ticket,m6_retention,658,272,0.4133738601823708,0.3763560326017508,0.45139731502704744,Active 6 calendar months after registration month; registered <= Apr-2026
+ticket_status,Has unresolved ticket,active_last_30d,1185,587,0.49535864978902955,0.46695225034769017,0.5237950451709054,Recency proxy: days since last activity <= 30; tenure >= 31 d
+ticket_status,Has unresolved ticket,inactive_90d_proxy,989,146,0.14762386248736098,0.12687991722907904,0.17109470430168683,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+ticket_status,Has unresolved ticket,dormant_3m,984,234,0.23780487804878048,0.2122554799545136,0.26539356823296906,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+ticket_status,No ticket,m1_retention,4282,2933,0.6849602989257356,0.6708858849292115,0.6987031358129455,Active in the calendar month after registration month (30-day retention proxy)
+ticket_status,No ticket,m3_retention,3473,1961,0.5646415202994529,0.5480893231002119,0.5810508712646968,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+ticket_status,No ticket,m6_retention,2328,972,0.4175257731958763,0.3976447578173705,0.4376785334387767,Active 6 calendar months after registration month; registered <= Apr-2026
+ticket_status,No ticket,active_last_30d,4282,2472,0.5773003269500233,0.5624413297808234,0.592020748332376,Recency proxy: days since last activity <= 30; tenure >= 31 d
+ticket_status,No ticket,inactive_90d_proxy,3489,509,0.14588707366007453,0.13456341644959177,0.15798967270280492,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+ticket_status,No ticket,dormant_3m,3473,722,0.20788943276706018,0.19471954624152177,0.22170483156159698,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
+ticket_status,Tickets all resolved,m1_retention,3649,2450,0.6714168265278159,0.6560033977297308,0.6864697059493339,Active in the calendar month after registration month (30-day retention proxy)
+ticket_status,Tickets all resolved,m3_retention,2977,1654,0.5555928787369835,0.5376827066891079,0.5733597586334371,Active 3 calendar months after registration month (90-day retention proxy); registered <= Jul-2026
+ticket_status,Tickets all resolved,m6_retention,1969,773,0.3925850685627222,0.3712445903297441,0.4143438725250538,Active 6 calendar months after registration month; registered <= Apr-2026
+ticket_status,Tickets all resolved,active_last_30d,3649,1864,0.5108248835297342,0.49460253087491496,0.5270244676787592,Recency proxy: days since last activity <= 30; tenure >= 31 d
+ticket_status,Tickets all resolved,inactive_90d_proxy,2988,455,0.15227576974564927,0.1398400433004191,0.1656044695374263,Recency proxy: days since last activity > 90 (bounded at 120 d); tenure >= 91 d
+ticket_status,Tickets all resolved,dormant_3m,2977,676,0.22707423580786026,0.2123821506786891,0.2424697944900847,No active month Aug-Oct 2026 (monthly source); registered <= Jul-2026
